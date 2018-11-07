@@ -35,11 +35,10 @@ kramdown:
 owner:
   name: GenusNymphicus
   avatar: avatar.png
-  email: GenusNymphicus@gmail.com
-  twitter: GenusNymphicus #username
-  github: KevinThielen #username
+#  email: GenusNymphicus@gmail.com
+#  twitter: GenusNymphicus #username
+#  github: KevinThielen #username
   disqus-shortname: genusnymphicus
-  patreon: GenusNymphicus
   google:
     plus: #username
     analytics: 

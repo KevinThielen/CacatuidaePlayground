@@ -1,0 +1,14 @@
+
+
+<span>
+<h2>Related articles</h2>
+
+{% assign sorted = (site.categories[page.categories.first] | sort: 'date') %}
+{% for post in sorted %}
+ {% if post.url == page.url %}
+ <ul> <a class="self" href="{{ site.url }}{{ post.url }}"> {{post.title}}</a></ul>
+ {% else %}
+ <ul> <a href="{{ site.url }}{{ post.url }}"> {{post.title}}</a></ul>
+ {% endif %}
+{% endfor %}
+</span>

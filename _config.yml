@@ -1,0 +1,49 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: GenusNymphicus
+email: GenusNymphicus@gmail.com
+description: Cacatuidae Playground
+url: CacatuidaePlayground
+keywords: ["GameDev", "Cacatuidae]
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Europe/Berlin
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: GenusNymphicus
+  avatar: avatar.png
+  email: GenusNymphicus@gmail.com
+  twitter: GenusNymphicus #username
+  github: KevinThielen #username
+  disqus-shortname: genusnymphicus
+  patreon: GenusNymphicus
+  google:
+    plus: #username
+    analytics: 
+    verify:
+    ad-client:
+    ad-slot:
+

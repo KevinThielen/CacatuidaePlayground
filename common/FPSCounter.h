@@ -10,11 +10,11 @@ class FPSCounter
 {
 public:
     int fps = 0;
-    double deltaTime = 0;
+    float deltaTime = 0;
 
     void update()
     {
-        end = emscripten_get_now();
+        end = emscripten_get_now()/1000.f;
         deltaTime = end-start;
         start = end;
 
@@ -22,7 +22,7 @@ public:
         accumulatedTime+=deltaTime;
         fps++;
 
-        if(accumulatedTime >= 1000.0)
+        if(accumulatedTime >= 1.0f)
         {
             printf("Frame Time: %f, FPS: %i\n", deltaTime, fps);
             fps=0;

@@ -44,7 +44,7 @@ namespace cac
         void disableAttribPointer(GLuint location);
 
         template<EBufferObjectTarget target> void bind();
-        template<EBufferObjectUsage usage> void setData(unsigned int size, void* data);
+        template<EBufferObjectUsage usage> void setData(size_t size, void* data);
         template<EBufferObjectDataType dataType> void setAttributePointer(GLuint location, GLuint numberOfElements, bool normalized, GLuint stride, const void* offset);
   
         GLuint id = 0;
@@ -92,6 +92,7 @@ void cac::BufferObject::enableAttribPointer(GLuint location)
 
 bool cac::BufferObject::enabledCheck(GLuint location)
 {
+    location = 0;
    // GLint enabled;
    // glGetVertexAttribiv(0, GL_VERTEX_ATTRIB_ARRAY_ENABLED, &enabled);
 /*
@@ -110,6 +111,13 @@ template<> void cac::BufferObject::bind<cac::EBufferObjectTarget::ARRAY_BUFFER>(
     glBindBuffer(GL_ARRAY_BUFFER, id);
     boundTo = GL_ARRAY_BUFFER;
 }
+
+template<> void cac::BufferObject::bind<cac::EBufferObjectTarget::ELEMENT_ARRAY_BUFFER>()
+{
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, id);
+    boundTo = GL_ELEMENT_ARRAY_BUFFER;
+}
+
 
 
 template<> void cac::BufferObject::setAttributePointer<cac::EBufferObjectDataType::FLOAT>(GLuint location,
@@ -139,19 +147,19 @@ template<> void cac::BufferObject::setAttributePointer<cac::EBufferObjectDataTyp
     }
 }
 
-template <> void cac::BufferObject::setData<cac::EBufferObjectUsage::DYNAMIC>(unsigned int size, void* data)
+template <> void cac::BufferObject::setData<cac::EBufferObjectUsage::DYNAMIC>(size_t size, void* data)
 {
     if(boundCheck("set data"))
     {
-        glBufferData(GL_ARRAY_BUFFER, size, data, GL_DYNAMIC_DRAW);
+        glBufferData(boundTo, size, data, GL_DYNAMIC_DRAW);
     }
 }
 
-template <> void cac::BufferObject::setData<cac::EBufferObjectUsage::STATIC>(unsigned int size, void* data)
+template <> void cac::BufferObject::setData<cac::EBufferObjectUsage::STATIC>(size_t size, void* data)
 {
     if(boundCheck("set data"))
     {
-        glBufferData(GL_ARRAY_BUFFER, size, data, GL_STATIC_DRAW);
+        glBufferData(boundTo, size, data, GL_STATIC_DRAW);
     }
 }
 

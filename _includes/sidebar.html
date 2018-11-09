@@ -8,10 +8,10 @@
 
   {% include social-links.html %}
 
-
-  {% for post in site.posts %}
-  
   {% assign index = 1 %}
+  {% for post in site.posts reversed %}
+  
+
 
   {% if index <= 10 %}{% assign formattedIndex = index | prepend: '0' %}{% endif %}
 

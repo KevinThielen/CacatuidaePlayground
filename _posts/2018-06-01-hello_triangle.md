@@ -6,5 +6,3 @@ example_dir: hello_triangle
 comments: false
 ---
 
-Hello triangle example
-

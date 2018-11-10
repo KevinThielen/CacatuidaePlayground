@@ -16,7 +16,6 @@ void createWGLContext(int width, int height)
     attrs.alpha = 0;
     glContext = emscripten_webgl_create_context(0, &attrs);
     emscripten_webgl_make_context_current(glContext);
-
 }
 
 

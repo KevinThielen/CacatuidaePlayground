@@ -13,3 +13,4 @@ target_include_directories(Common INTERFACE ${CMAKE_CURRENT_LIST_DIR}/common/)
 #examples
 add_subdirectory(01_hello_triangle)
 add_subdirectory(02_indexed_plane)
+add_subdirectory(03_textured_cube)

@@ -1,7 +1,7 @@
 ---
 layout: example
-title: "Draw Geometry"
-example_dir: draw_geometry
+title: "Fuzzy Shader"
+example_dir: shader_fuzzy
 
 comments: false
 ---

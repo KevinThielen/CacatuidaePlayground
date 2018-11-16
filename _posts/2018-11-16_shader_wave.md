@@ -1,7 +1,7 @@
 ---
 layout: example
-title: "Indexed Plane"
-example_dir: indexed_plane
+title: "Wave Shader"
+example_dir: shader_wave
 
 comments: false
 ---

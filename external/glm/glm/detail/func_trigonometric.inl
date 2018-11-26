@@ -2,7 +2,7 @@
 #include <cmath>
 #include <limits>
 
-namespace glm
+namespace cac
 {
 	// radians
 	template<typename genType>
@@ -189,7 +189,7 @@ namespace glm
 	{
 		return detail::functor1<vec, L, T, T, Q>::call(atanh, v);
 	}
-}//namespace glm
+}//namespace cac
 
 #if GLM_CONFIG_SIMD == GLM_ENABLE
 #	include "func_trigonometric_simd.inl"

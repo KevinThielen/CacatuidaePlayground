@@ -1,12 +1,12 @@
 /// @ref ext_scalar_uint_sized
-/// @file glm/ext/scalar_uint_sized.hpp
+/// @file cac/ext/scalar_uint_sized.hpp
 ///
 /// @defgroup ext_scalar_uint_sized GLM_EXT_scalar_uint_sized
 /// @ingroup ext
 ///
 /// Exposes sized unsigned integer scalar types.
 ///
-/// Include <glm/ext/scalar_uint_sized.hpp> to use the features of this extension.
+/// Include <cac/ext/scalar_uint_sized.hpp> to use the features of this extension.
 ///
 /// @see ext_scalar_int_sized
 
@@ -18,7 +18,7 @@
 #	pragma message("GLM: GLM_EXT_scalar_uint_sized extension included")
 #endif
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 #	if GLM_HAS_EXTENDED_INTEGER_TYPE
@@ -67,4 +67,4 @@ namespace detail
 	typedef detail::uint64		uint64;
 
 	/// @}
-}//namespace glm
+}//namespace cac

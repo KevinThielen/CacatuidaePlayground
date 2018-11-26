@@ -516,7 +516,7 @@
 #	define GLM_CONFIG_LENGTH_TYPE		GLM_LENGTH_INT
 #endif
 
-namespace glm
+namespace cac
 {
 	using std::size_t;
 #	if GLM_CONFIG_LENGTH_TYPE == GLM_LENGTH_SIZE_T
@@ -524,7 +524,7 @@ namespace glm
 #	else
 		typedef int length_t;
 #	endif
-}//namespace glm
+}//namespace cac
 
 ///////////////////////////////////////////////////////////////////////////////////
 // constexpr
@@ -532,15 +532,15 @@ namespace glm
 #if GLM_HAS_CONSTEXPR
 #	define GLM_CONFIG_CONSTEXP GLM_ENABLE
 
-	namespace glm
+	namespace cac
 	{
 		template<typename T, std::size_t N>
 		constexpr std::size_t countof(T const (&)[N])
 		{
 			return N;
 		}
-	}//namespace glm
-#	define GLM_COUNTOF(arr) glm::countof(arr)
+	}//namespace cac
+#	define GLM_COUNTOF(arr) cac::countof(arr)
 #elif defined(_MSC_VER)
 #	define GLM_CONFIG_CONSTEXP GLM_DISABLE
 
@@ -554,7 +554,7 @@ namespace glm
 ///////////////////////////////////////////////////////////////////////////////////
 // uint
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	template<typename T>
@@ -577,7 +577,7 @@ namespace detail
 }//namespace detail
 
 	typedef unsigned int	uint;
-}//namespace glm
+}//namespace cac
 
 ///////////////////////////////////////////////////////////////////////////////////
 // 64-bit int
@@ -586,7 +586,7 @@ namespace detail
 #	include <cstdint>
 #endif
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 #	if GLM_HAS_EXTENDED_INTEGER_TYPE
@@ -611,7 +611,7 @@ namespace detail
 		typedef signed long long					int64;
 #	endif
 }//namespace detail
-}//namespace glm
+}//namespace cac
 
 ///////////////////////////////////////////////////////////////////////////////////
 // make_unsigned
@@ -619,16 +619,16 @@ namespace detail
 #if GLM_HAS_MAKE_SIGNED
 #	include <type_traits>
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	using std::make_unsigned;
 }//namespace detail
-}//namespace glm
+}//namespace cac
 
 #else
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	template<typename genType>
@@ -695,7 +695,7 @@ namespace detail
 		typedef uint64 type;
 	};
 }//namespace detail
-}//namespace glm
+}//namespace cac
 #endif
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -992,9 +992,9 @@ namespace detail
 
 	// Report .length() type
 #	if GLM_CONFIG_LENGTH_TYPE == GLM_LENGTH_SIZE_T
-#		pragma message("GLM: GLM_FORCE_SIZE_T_LENGTH is defined. .length() returns a glm::length_t, a typedef of std::size_t.")
+#		pragma message("GLM: GLM_FORCE_SIZE_T_LENGTH is defined. .length() returns a cac::length_t, a typedef of std::size_t.")
 #	else
-#		pragma message("GLM: GLM_FORCE_SIZE_T_LENGTH is undefined. .length() returns a glm::length_t, a typedef of int following GLSL.")
+#		pragma message("GLM: GLM_FORCE_SIZE_T_LENGTH is undefined. .length() returns a cac::length_t, a typedef of int following GLSL.")
 #	endif
 
 #	if GLM_CONFIG_UNRESTRICTED_GENTYPE == GLM_ENABLE

@@ -2,7 +2,7 @@
 
 #include "../detail/qualifier.hpp"
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	template<length_t L, typename T, qualifier Q, bool Aligned>
@@ -80,4 +80,4 @@ namespace detail
 		return pow(pow(v.x, T(Depth)) + pow(v.y, T(Depth)) + pow(v.z, T(Depth)), T(1) / T(Depth));
 	}
 
-}//namespace glm
+}//namespace cac

@@ -1,10 +1,10 @@
 /// @ref core
-/// @file glm/ext/matrix_float2x3_precision.hpp
+/// @file cac/ext/matrix_float2x3_precision.hpp
 
 #pragma once
 #include "../detail/type_mat2x3.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_matrix_precision
 	/// @{
@@ -28,4 +28,4 @@ namespace glm
 	typedef mat<2, 3, float, highp>		highp_mat2x3;
 
 	/// @}
-}//namespace glm
+}//namespace cac

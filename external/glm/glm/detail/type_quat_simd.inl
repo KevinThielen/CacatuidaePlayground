@@ -2,7 +2,7 @@
 
 #if GLM_ARCH & GLM_ARCH_SSE2_BIT
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 /*
@@ -182,7 +182,7 @@ namespace detail
 		}
 	};
 }//namespace detail
-}//namespace glm
+}//namespace cac
 
 #endif//GLM_ARCH & GLM_ARCH_SSE2_BIT
 

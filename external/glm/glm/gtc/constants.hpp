@@ -1,12 +1,12 @@
 /// @ref gtc_constants
-/// @file glm/gtc/constants.hpp
+/// @file cac/gtc/constants.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtc_constants GLM_GTC_constants
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/constants.hpp> to use the features of this extension.
+/// Include <cac/gtc/constants.hpp> to use the features of this extension.
 ///
 /// Provide a list of constants and precomputed useful values.
 
@@ -19,7 +19,7 @@
 #	pragma message("GLM: GLM_GTC_constants extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_constants
 	/// @{
@@ -160,6 +160,6 @@ namespace glm
 	GLM_FUNC_DECL GLM_CONSTEXPR genType golden_ratio();
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "constants.inl"

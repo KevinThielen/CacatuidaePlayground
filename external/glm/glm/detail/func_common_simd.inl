@@ -1,5 +1,5 @@
 /// @ref core
-/// @file glm/detail/func_common_simd.inl
+/// @file cac/detail/func_common_simd.inl
 
 #if GLM_ARCH & GLM_ARCH_SSE2_BIT
 
@@ -7,7 +7,7 @@
 
 #include <immintrin.h>
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	template<qualifier Q>
@@ -16,7 +16,7 @@ namespace detail
 		GLM_FUNC_QUALIFIER static vec<4, float, Q> call(vec<4, float, Q> const& v)
 		{
 			vec<4, float, Q> result;
-			result.data = glm_vec4_abs(v.data);
+			result.data = cac_vec4_abs(v.data);
 			return result;
 		}
 	};
@@ -27,7 +27,7 @@ namespace detail
 		GLM_FUNC_QUALIFIER static vec<4, int, Q> call(vec<4, int, Q> const& v)
 		{
 			vec<4, int, Q> result;
-			result.data = glm_ivec4_abs(v.data);
+			result.data = cac_ivec4_abs(v.data);
 			return result;
 		}
 	};
@@ -38,7 +38,7 @@ namespace detail
 		GLM_FUNC_QUALIFIER static vec<4, float, Q> call(vec<4, float, Q> const& v)
 		{
 			vec<4, float, Q> result;
-			result.data = glm_vec4_floor(v.data);
+			result.data = cac_vec4_floor(v.data);
 			return result;
 		}
 	};
@@ -49,7 +49,7 @@ namespace detail
 		GLM_FUNC_QUALIFIER static vec<4, float, Q> call(vec<4, float, Q> const& v)
 		{
 			vec<4, float, Q> result;
-			result.data = glm_vec4_ceil(v.data);
+			result.data = cac_vec4_ceil(v.data);
 			return result;
 		}
 	};
@@ -60,7 +60,7 @@ namespace detail
 		GLM_FUNC_QUALIFIER static vec<4, float, Q> call(vec<4, float, Q> const& v)
 		{
 			vec<4, float, Q> result;
-			result.data = glm_vec4_fract(v.data);
+			result.data = cac_vec4_fract(v.data);
 			return result;
 		}
 	};
@@ -71,7 +71,7 @@ namespace detail
 		GLM_FUNC_QUALIFIER static vec<4, float, Q> call(vec<4, float, Q> const& v)
 		{
 			vec<4, float, Q> result;
-			result.data = glm_vec4_round(v.data);
+			result.data = cac_vec4_round(v.data);
 			return result;
 		}
 	};
@@ -82,7 +82,7 @@ namespace detail
 		GLM_FUNC_QUALIFIER static vec<4, float, Q> call(vec<4, float, Q> const& x, vec<4, float, Q> const& y)
 		{
 			vec<4, float, Q> result;
-			result.data = glm_vec4_mod(x.data, y.data);
+			result.data = cac_vec4_mod(x.data, y.data);
 			return result;
 		}
 	};
@@ -210,7 +210,7 @@ namespace detail
 		GLM_FUNC_QUALIFIER static vec<4, float, Q> call(vec<4, float, Q> const& edge, vec<4, float, Q> const& x)
 		{
 			vec<4, float, Q> Result;
-			result.data = glm_vec4_step(edge.data, x.data);
+			result.data = cac_vec4_step(edge.data, x.data);
 			return result;
 		}
 	};
@@ -221,11 +221,11 @@ namespace detail
 		GLM_FUNC_QUALIFIER static vec<4, float, Q> call(vec<4, float, Q> const& edge0, vec<4, float, Q> const& edge1, vec<4, float, Q> const& x)
 		{
 			vec<4, float, Q> Result;
-			Result.data = glm_vec4_smoothstep(edge0.data, edge1.data, x.data);
+			Result.data = cac_vec4_smoothstep(edge0.data, edge1.data, x.data);
 			return Result;
 		}
 	};
 }//namespace detail
-}//namespace glm
+}//namespace cac
 
 #endif//GLM_ARCH & GLM_ARCH_SSE2_BIT

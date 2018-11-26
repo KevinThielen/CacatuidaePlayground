@@ -2,7 +2,7 @@
 
 #include <cstring>
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_type_ptr
 	/// @{
@@ -382,5 +382,5 @@ namespace glm
 	}
 
 	/// @}
-}//namespace glm
+}//namespace cac
 

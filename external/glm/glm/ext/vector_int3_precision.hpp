@@ -1,10 +1,10 @@
 /// @ref core
-/// @file glm/ext/vector_int3_precision.hpp
+/// @file cac/ext/vector_int3_precision.hpp
 
 #pragma once
 #include "../detail/type_vec3.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_vector_precision
 	/// @{
@@ -28,4 +28,4 @@ namespace glm
 	typedef vec<3, int, lowp>		lowp_ivec3;
 
 	/// @}
-}//namespace glm
+}//namespace cac

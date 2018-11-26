@@ -1,6 +1,6 @@
 /// @ref gtx_vector_angle
 
-namespace glm
+namespace cac
 {
 	template<typename genType>
 	GLM_FUNC_QUALIFIER genType angle
@@ -27,7 +27,7 @@ namespace glm
 		GLM_STATIC_ASSERT(std::numeric_limits<T>::is_iec559, "'orientedAngle' only accept floating-point inputs");
 		T const Angle(acos(clamp(dot(x, y), T(-1), T(1))));
 
-		if(all(epsilonEqual(y, glm::rotate(x, Angle), T(0.0001))))
+		if(all(epsilonEqual(y, cac::rotate(x, Angle), T(0.0001))))
 			return Angle;
 		else
 			return -Angle;
@@ -41,4 +41,4 @@ namespace glm
 		T const Angle(acos(clamp(dot(x, y), T(-1), T(1))));
 		return mix(Angle, -Angle, dot(ref, cross(x, y)) < T(0));
 	}
-}//namespace glm
+}//namespace cac

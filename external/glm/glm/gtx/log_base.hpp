@@ -1,19 +1,19 @@
 /// @ref gtx_log_base
-/// @file glm/gtx/log_base.hpp
+/// @file cac/gtx/log_base.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_log_base GLM_GTX_log_base
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/log_base.hpp> to use the features of this extension.
+/// Include <cac/gtx/log_base.hpp> to use the features of this extension.
 ///
 /// Logarithm for any base. base can be a vector or a scalar.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_log_base is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_log_base extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_log_base
 	/// @{
@@ -43,6 +43,6 @@ namespace glm
 		vec<L, T, Q> const& base);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "log_base.inl"

@@ -1,12 +1,12 @@
 /// @ref ext_quaternion_relational
-/// @file glm/ext/quaternion_relational.hpp
+/// @file cac/ext/quaternion_relational.hpp
 ///
 /// @defgroup ext_quaternion_relational GLM_EXT_quaternion_relational
 /// @ingroup ext
 ///
 /// Exposes comparison functions for quaternion types that take a user defined epsilon values.
 ///
-/// Include <glm/ext/quaternion_relational.hpp> to use the features of this extension.
+/// Include <cac/ext/quaternion_relational.hpp> to use the features of this extension.
 ///
 /// @see core_vector_relational
 /// @see ext_vector_relational
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_EXT_quaternion_relational extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_quaternion_relational
 	/// @{
@@ -57,6 +57,6 @@ namespace glm
 	GLM_FUNC_DECL vec<4, bool, Q> notEqual(qua<T, Q> const& x, qua<T, Q> const& y, T epsilon);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "quaternion_relational.inl"

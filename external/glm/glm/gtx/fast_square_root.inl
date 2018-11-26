@@ -1,6 +1,6 @@
 /// @ref gtx_fast_square_root
 
-namespace glm
+namespace cac
 {
 	// fastSqrt
 	template<typename genType>
@@ -77,4 +77,4 @@ namespace glm
 	{
 		return x * fastInverseSqrt(dot(x, x));
 	}
-}//namespace glm
+}//namespace cac

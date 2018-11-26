@@ -1,5 +1,5 @@
 /// @ref gtc_color_space
-/// @file glm/gtc/color_space.hpp
+/// @file cac/gtc/color_space.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_color_space (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtc_color_space GLM_GTC_color_space
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/color_space.hpp> to use the features of this extension.
+/// Include <cac/gtc/color_space.hpp> to use the features of this extension.
 ///
 /// Allow to perform bit operations on integer values
 
@@ -25,7 +25,7 @@
 #	pragma message("GLM: GLM_GTC_color_space extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_color_space
 	/// @{
@@ -51,6 +51,6 @@ namespace glm
 	GLM_FUNC_DECL vec<L, T, Q> convertSRGBToLinear(vec<L, T, Q> const& ColorSRGB, T Gamma);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "color_space.inl"

@@ -1,5 +1,5 @@
 /// @ref gtx_gradient_paint
-/// @file glm/gtx/gradient_paint.hpp
+/// @file cac/gtx/gradient_paint.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_optimum_pow (dependence)
@@ -7,14 +7,14 @@
 /// @defgroup gtx_gradient_paint GLM_GTX_gradient_paint
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/gradient_paint.hpp> to use the features of this extension.
+/// Include <cac/gtx/gradient_paint.hpp> to use the features of this extension.
 ///
 /// Functions that return the color of procedural gradient for specific coordinates.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtx/optimum_pow.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
@@ -25,7 +25,7 @@
 #	pragma message("GLM: GLM_GTX_gradient_paint extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_gradient_paint
 	/// @{
@@ -48,6 +48,6 @@ namespace glm
 		vec<2, T, Q> const& Position);
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "gradient_paint.inl"

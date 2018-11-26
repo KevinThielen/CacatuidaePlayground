@@ -1,12 +1,12 @@
 /// @ref ext_quaternion_trigonometric
-/// @file glm/ext/quaternion_trigonometric.hpp
+/// @file cac/ext/quaternion_trigonometric.hpp
 ///
 /// @defgroup ext_quaternion_trigonometric GLM_EXT_quaternion_trigonometric
 /// @ingroup ext
 ///
 /// Provides trigonometric functions for quaternion types
 ///
-/// Include <glm/ext/quaternion_trigonometric.hpp> to use the features of this extension.
+/// Include <cac/ext/quaternion_trigonometric.hpp> to use the features of this extension.
 ///
 /// @see ext_quaternion_float
 /// @see ext_quaternion_double
@@ -28,7 +28,7 @@
 #	pragma message("GLM: GLM_EXT_quaternion_trigonometric extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_quaternion_trigonometric
 	/// @{
@@ -58,6 +58,6 @@ namespace glm
 	GLM_FUNC_DECL qua<T, Q> angleAxis(T const& angle, vec<3, T, Q> const& axis);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "quaternion_trigonometric.inl"

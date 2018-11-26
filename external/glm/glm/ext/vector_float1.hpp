@@ -1,12 +1,12 @@
 /// @ref ext_vector_float1
-/// @file glm/ext/vector_float1.hpp
+/// @file cac/ext/vector_float1.hpp
 ///
 /// @defgroup ext_vector_float1 GLM_EXT_vector_float1
 /// @ingroup ext
 ///
 /// Exposes single-precision floating point vector type with one component.
 ///
-/// Include <glm/ext/vector_float1.hpp> to use the features of this extension.
+/// Include <cac/ext/vector_float1.hpp> to use the features of this extension.
 ///
 /// @see ext_vector_float1_precision extension.
 /// @see ext_vector_double1 extension.
@@ -19,7 +19,7 @@
 #	pragma message("GLM: GLM_EXT_vector_float1 extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_vector_float1
 	/// @{
@@ -28,4 +28,4 @@ namespace glm
 	typedef vec<1, float, defaultp>		vec1;
 
 	/// @}
-}//namespace glm
+}//namespace cac

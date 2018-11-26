@@ -1,12 +1,12 @@
 /// @ref gtx_bit
-/// @file glm/gtx/bit.hpp
+/// @file cac/gtx/bit.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_bit GLM_GTX_bit
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/bit.hpp> to use the features of this extension.
+/// Include <cac/gtx/bit.hpp> to use the features of this extension.
 ///
 /// Allow to perform bit operations on integer values
 
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_bit extension is deprecated, include GLM_GTC_bitfield and GLM_GTC_integer instead")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_bit
 	/// @{
@@ -91,7 +91,7 @@ namespace glm
 	GLM_DEPRECATED GLM_FUNC_DECL vec<L, T, Q> powerOfTwoNearest(vec<L, T, Q> const& value);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 
 #include "bit.inl"

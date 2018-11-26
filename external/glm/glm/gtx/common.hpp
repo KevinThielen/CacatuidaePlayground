@@ -1,12 +1,12 @@
 /// @ref gtx_common
-/// @file glm/gtx/common.hpp
+/// @file cac/gtx/common.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_common GLM_GTX_common
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/common.hpp> to use the features of this extension.
+/// Include <cac/gtx/common.hpp> to use the features of this extension.
 ///
 /// @brief Provide functions to increase the compatibility with Cg and HLSL languages
 
@@ -26,7 +26,7 @@
 #	pragma message("GLM: GLM_GTX_common extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_common
 	/// @{
@@ -71,6 +71,6 @@ namespace glm
 	GLM_FUNC_DECL vec<L, bool, Q> closeBounded(vec<L, T, Q> const& Value, vec<L, T, Q> const& Min, vec<L, T, Q> const& Max);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "common.inl"

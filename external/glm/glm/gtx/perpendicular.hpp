@@ -1,5 +1,5 @@
 /// @ref gtx_perpendicular
-/// @file glm/gtx/perpendicular.hpp
+/// @file cac/gtx/perpendicular.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_projection (dependence)
@@ -7,14 +7,14 @@
 /// @defgroup gtx_perpendicular GLM_GTX_perpendicular
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/perpendicular.hpp> to use the features of this extension.
+/// Include <cac/gtx/perpendicular.hpp> to use the features of this extension.
 ///
 /// Perpendicular of a vector from other one
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtx/projection.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
@@ -25,7 +25,7 @@
 #	pragma message("GLM: GLM_GTX_perpendicular extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_perpendicular
 	/// @{
@@ -36,6 +36,6 @@ namespace glm
 	GLM_FUNC_DECL genType perp(genType const& x, genType const& Normal);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "perpendicular.inl"

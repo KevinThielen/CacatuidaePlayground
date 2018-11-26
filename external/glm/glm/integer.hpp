@@ -1,5 +1,5 @@
 /// @ref core
-/// @file glm/integer.hpp
+/// @file cac/integer.hpp
 ///
 /// @see <a href="http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf">GLSL 4.20.8 specification, section 8.8 Integer Functions</a>
 ///
@@ -12,7 +12,7 @@
 /// The notation [a, b] means the set of bits from bit-number a through bit-number
 /// b, inclusive. The lowest-order bit is bit 0.
 ///
-/// Include <glm/integer.hpp> to use these core features.
+/// Include <cac/integer.hpp> to use these core features.
 
 #pragma once
 
@@ -20,7 +20,7 @@
 #include "common.hpp"
 #include "vector_relational.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_func_integer
 	/// @{
@@ -207,6 +207,6 @@ namespace glm
 	GLM_FUNC_DECL vec<L, int, Q> findMSB(vec<L, T, Q> const& v);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "detail/func_integer.inl"

@@ -1,5 +1,5 @@
 /// @ref core
-/// @file glm/detail/type_vec2.hpp
+/// @file cac/detail/type_vec2.hpp
 
 #pragma once
 
@@ -11,7 +11,7 @@
 #endif
 #include <cstddef>
 
-namespace glm
+namespace cac
 {
 	template<typename T, qualifier Q>
 	struct vec<2, T, Q>
@@ -368,7 +368,7 @@ namespace glm
 
 	template<qualifier Q>
 	GLM_FUNC_DECL GLM_CONSTEXPR vec<2, bool, Q> operator||(vec<2, bool, Q> const& v1, vec<2, bool, Q> const& v2);
-}//namespace glm
+}//namespace cac
 
 #ifndef GLM_EXTERNAL_TEMPLATE
 #include "type_vec2.inl"

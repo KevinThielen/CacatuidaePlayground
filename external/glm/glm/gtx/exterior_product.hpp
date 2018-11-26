@@ -1,5 +1,5 @@
 /// @ref gtx_exterior_product
-/// @file glm/gtx/exterior_product.hpp
+/// @file cac/gtx/exterior_product.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_exterior_product (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtx_exterior_product GLM_GTX_exterior_product
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/exterior_product.hpp> to use the features of this extension.
+/// Include <cac/gtx/exterior_product.hpp> to use the features of this extension.
 ///
 /// @brief Allow to perform bit operations on integer values
 
@@ -21,7 +21,7 @@
 #	pragma message("GLM: GLM_GTX_exterior_product extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_exterior_product
 	/// @{
@@ -36,6 +36,6 @@ namespace glm
 	GLM_FUNC_DECL T cross(vec<2, T, Q> const& v, vec<2, T, Q> const& u);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "exterior_product.inl"

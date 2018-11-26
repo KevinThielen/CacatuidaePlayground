@@ -1,12 +1,12 @@
 /// @ref gtx_euler_angles
-/// @file glm/gtx/euler_angles.hpp
+/// @file cac/gtx/euler_angles.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_euler_angles GLM_GTX_euler_angles
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/euler_angles.hpp> to use the features of this extension.
+/// Include <cac/gtx/euler_angles.hpp> to use the features of this extension.
 ///
 /// Build matrices from Euler angles.
 ///
@@ -16,7 +16,7 @@
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_euler_angles is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -26,7 +26,7 @@
 #	pragma message("GLM: GLM_GTX_euler_angles extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_euler_angles
 	/// @{
@@ -330,6 +330,6 @@ namespace glm
 											T & t3);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "euler_angles.inl"

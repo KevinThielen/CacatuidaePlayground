@@ -1,19 +1,19 @@
 /// @ref gtx_optimum_pow
-/// @file glm/gtx/optimum_pow.hpp
+/// @file cac/gtx/optimum_pow.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_optimum_pow GLM_GTX_optimum_pow
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/optimum_pow.hpp> to use the features of this extension.
+/// Include <cac/gtx/optimum_pow.hpp> to use the features of this extension.
 ///
 /// Integer exponentiation of power functions.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_optimum_pow is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_optimum_pow extension included")
 #endif
 
-namespace glm{
+namespace cac{
 namespace gtx
 {
 	/// @addtogroup gtx_optimum_pow
@@ -49,6 +49,6 @@ namespace gtx
 
 	/// @}
 }//namespace gtx
-}//namespace glm
+}//namespace cac
 
 #include "optimum_pow.inl"

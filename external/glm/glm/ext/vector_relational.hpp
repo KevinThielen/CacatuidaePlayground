@@ -1,12 +1,12 @@
 /// @ref ext_vector_relational
-/// @file glm/ext/vector_relational.hpp
+/// @file cac/ext/vector_relational.hpp
 ///
 /// @defgroup ext_vector_relational GLM_EXT_vector_relational
 /// @ingroup ext
 ///
 /// Exposes comparison functions for vector types that take a user defined epsilon values.
 ///
-/// Include <glm/ext/vector_relational.hpp> to use the features of this extension.
+/// Include <cac/ext/vector_relational.hpp> to use the features of this extension.
 ///
 /// @see core_vector_relational
 /// @see ext_scalar_relational
@@ -21,7 +21,7 @@
 #	pragma message("GLM: GLM_EXT_vector_relational extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_vector_relational
 	/// @{
@@ -63,6 +63,6 @@ namespace glm
 	GLM_FUNC_DECL GLM_CONSTEXPR vec<L, bool, Q> notEqual(vec<L, T, Q> const& x, vec<L, T, Q> const& y, vec<L, T, Q> const& epsilon);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "vector_relational.inl"

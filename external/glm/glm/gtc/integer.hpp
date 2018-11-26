@@ -1,5 +1,5 @@
 /// @ref gtc_integer
-/// @file glm/gtc/integer.hpp
+/// @file cac/gtc/integer.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_integer (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtc_integer GLM_GTC_integer
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/integer.hpp> to use the features of this extension.
+/// Include <cac/gtc/integer.hpp> to use the features of this extension.
 ///
 /// @brief Allow to perform bit operations on integer values
 
@@ -25,7 +25,7 @@
 #	pragma message("GLM: GLM_GTC_integer extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_integer
 	/// @{
@@ -60,6 +60,6 @@ namespace glm
 	GLM_FUNC_DECL vec<L, uint, Q> uround(vec<L, T, Q> const& x);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "integer.inl"

@@ -1,5 +1,5 @@
 /// @ref gtc_random
-/// @file glm/gtc/random.hpp
+/// @file cac/gtc/random.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_random (extended)
@@ -7,7 +7,7 @@
 /// @defgroup gtc_random GLM_GTC_random
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/random.hpp> to use the features of this extension.
+/// Include <cac/gtc/random.hpp> to use the features of this extension.
 ///
 /// Generate random number from various distribution methods.
 
@@ -22,7 +22,7 @@
 #	pragma message("GLM: GLM_GTC_random extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_random
 	/// @{
@@ -77,6 +77,6 @@ namespace glm
 	GLM_FUNC_DECL vec<3, T, defaultp> ballRand(T Radius);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "random.inl"

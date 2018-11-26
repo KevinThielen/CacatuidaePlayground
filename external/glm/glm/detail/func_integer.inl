@@ -16,7 +16,7 @@
 #	endif
 #endif
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	template<typename T>
@@ -69,7 +69,7 @@ namespace detail
 			if(Value == 0)
 				return -1;
 
-			return glm::bitCount(~Value & (Value - static_cast<genIUType>(1)));
+			return cac::bitCount(~Value & (Value - static_cast<genIUType>(1)));
 		}
 	};
 
@@ -129,7 +129,7 @@ namespace detail
 			x = compute_findMSB_step_vec<L, T, Q, sizeof(T) * 8 >= 16>::call(x, static_cast<T>( 8));
 			x = compute_findMSB_step_vec<L, T, Q, sizeof(T) * 8 >= 32>::call(x, static_cast<T>(16));
 			x = compute_findMSB_step_vec<L, T, Q, sizeof(T) * 8 >= 64>::call(x, static_cast<T>(32));
-			return vec<L, int, Q>(sizeof(T) * 8 - 1) - glm::bitCount(~x);
+			return vec<L, int, Q>(sizeof(T) * 8 - 1) - cac::bitCount(~x);
 		}
 	};
 
@@ -276,7 +276,7 @@ namespace detail
 	template<typename genType>
 	GLM_FUNC_QUALIFIER genType bitfieldReverse(genType x)
 	{
-		return bitfieldReverse(glm::vec<1, genType, glm::defaultp>(x)).x;
+		return bitfieldReverse(cac::vec<1, genType, cac::defaultp>(x)).x;
 	}
 
 	template<length_t L, typename T, qualifier Q>
@@ -296,7 +296,7 @@ namespace detail
 	template<typename genType>
 	GLM_FUNC_QUALIFIER int bitCount(genType x)
 	{
-		return bitCount(glm::vec<1, genType, glm::defaultp>(x)).x;
+		return bitCount(cac::vec<1, genType, cac::defaultp>(x)).x;
 	}
 
 	template<length_t L, typename T, qualifier Q>
@@ -354,7 +354,7 @@ namespace detail
 
 		return detail::compute_findMSB_vec<L, T, Q, sizeof(T) * 8>::call(v);
 	}
-}//namespace glm
+}//namespace cac
 
 #if GLM_CONFIG_SIMD == GLM_ENABLE
 #	include "func_integer_simd.inl"

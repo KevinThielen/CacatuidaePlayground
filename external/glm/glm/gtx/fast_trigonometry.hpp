@@ -1,12 +1,12 @@
 /// @ref gtx_fast_trigonometry
-/// @file glm/gtx/fast_trigonometry.hpp
+/// @file cac/gtx/fast_trigonometry.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_fast_trigonometry GLM_GTX_fast_trigonometry
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/fast_trigonometry.hpp> to use the features of this extension.
+/// Include <cac/gtx/fast_trigonometry.hpp> to use the features of this extension.
 ///
 /// Fast but less accurate implementations of trigonometric functions.
 
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_fast_trigonometry extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_fast_trigonometry
 	/// @{
@@ -74,6 +74,6 @@ namespace glm
 	GLM_FUNC_DECL T fastAtan(T angle);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "fast_trigonometry.inl"

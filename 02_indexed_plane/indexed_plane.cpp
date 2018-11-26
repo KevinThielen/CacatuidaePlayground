@@ -84,7 +84,7 @@ void frame()
     glUniform4fv(colorLoc, 1, glm::value_ptr(wireColor));
 
     lineIndexBuffer.bind<cac::EBufferObjectTarget::ELEMENT_ARRAY_BUFFER>();
-    glDrawElements(GL_LINE_LOOP, 8, GL_UNSIGNED_INT, 0);
+    glDrawElements(GL_LINE_STRIP, 8, GL_UNSIGNED_INT, 0);
 
     fpsCounter.update();
 }
@@ -128,8 +128,7 @@ int main()
     glCullFace(GL_FRONT_AND_BACK);
     glDepthFunc(GL_ALWAYS);
 
-    glLineWidth(2.0f);
-
+    glLineWidth(20.0f);
     emscripten_set_main_loop(frame, 0, 1);
 
     return 0;

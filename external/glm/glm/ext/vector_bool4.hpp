@@ -1,10 +1,10 @@
 /// @ref core
-/// @file glm/ext/vector_bool4.hpp
+/// @file cac/ext/vector_bool4.hpp
 
 #pragma once
 #include "../detail/type_vec4.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_vector
 	/// @{
@@ -15,4 +15,4 @@ namespace glm
 	typedef vec<4, bool, defaultp>		bvec4;
 
 	/// @}
-}//namespace glm
+}//namespace cac

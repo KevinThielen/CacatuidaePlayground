@@ -1,5 +1,5 @@
 /// @ref gtx_associated_min_max
-/// @file glm/gtx/associated_min_max.hpp
+/// @file cac/gtx/associated_min_max.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_extented_min_max (dependence)
@@ -7,14 +7,14 @@
 /// @defgroup gtx_associated_min_max GLM_GTX_associated_min_max
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/associated_min_max.hpp> to use the features of this extension.
+/// Include <cac/gtx/associated_min_max.hpp> to use the features of this extension.
 ///
 /// @brief Min and max functions that return associated values not the compared onces.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GTX_associated_min_max is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -24,7 +24,7 @@
 #	pragma message("GLM: GLM_GTX_associated_min_max extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_associated_min_max
 	/// @{
@@ -202,6 +202,6 @@ namespace glm
 		vec<L, T, Q> const& w, U d);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "associated_min_max.inl"

@@ -1,4 +1,7 @@
-add_executable(indexed_plane ${CMAKE_CURRENT_SOURCE_DIR}/indexed_plane.cpp)
+set(example_name "indexed_plane")
+add_executable(${example_name}  ${CMAKE_CURRENT_SOURCE_DIR}/${example_name}.cpp)
 
-target_include_directories(indexed_plane PUBLIC ${PROJECT_SOURCE_DIR}/external/glm/)
-target_link_libraries(indexed_plane Common)
+
+target_include_directories(${example_name} PUBLIC ${PROJECT_SOURCE_DIR}/external/glm/ ${PROJECT_SOURCE_DIR}/external/)
+set_target_properties(${example_name} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/${example_name}") 
+target_link_libraries(${example_name} Common)

@@ -1,12 +1,12 @@
 /// @ref gtc_reciprocal
-/// @file glm/gtc/reciprocal.hpp
+/// @file cac/gtc/reciprocal.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtc_reciprocal GLM_GTC_reciprocal
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/reciprocal.hpp> to use the features of this extension.
+/// Include <cac/gtc/reciprocal.hpp> to use the features of this extension.
 ///
 /// Define secant, cosecant and cotangent functions.
 
@@ -19,7 +19,7 @@
 #	pragma message("GLM: GLM_GTC_reciprocal extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_reciprocal
 	/// @{
@@ -130,6 +130,6 @@ namespace glm
 	GLM_FUNC_DECL genType acoth(genType x);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "reciprocal.inl"

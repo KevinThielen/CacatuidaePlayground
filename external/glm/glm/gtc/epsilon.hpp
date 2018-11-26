@@ -1,5 +1,5 @@
 /// @ref gtc_epsilon
-/// @file glm/gtc/epsilon.hpp
+/// @file cac/gtc/epsilon.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_quaternion (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtc_epsilon GLM_GTC_epsilon
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/epsilon.hpp> to use the features of this extension.
+/// Include <cac/gtc/epsilon.hpp> to use the features of this extension.
 ///
 /// Comparison functions for a user defined epsilon values.
 
@@ -21,7 +21,7 @@
 #	pragma message("GLM: GLM_GTC_epsilon extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_epsilon
 	/// @{
@@ -55,6 +55,6 @@ namespace glm
 	GLM_FUNC_DECL bool epsilonNotEqual(genType const& x, genType const& y, genType const& epsilon);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "epsilon.inl"

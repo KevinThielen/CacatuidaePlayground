@@ -1,5 +1,5 @@
 /// @ref gtx_number_precision
-/// @file glm/gtx/number_precision.hpp
+/// @file cac/gtx/number_precision.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_type_precision (dependence)
@@ -8,14 +8,14 @@
 /// @defgroup gtx_number_precision GLM_GTX_number_precision
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/number_precision.hpp> to use the features of this extension.
+/// Include <cac/gtx/number_precision.hpp> to use the features of this extension.
 ///
 /// Defined size types.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtc/type_precision.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
@@ -26,7 +26,7 @@
 #	pragma message("GLM: GLM_GTX_number_precision extension included")
 #endif
 
-namespace glm{
+namespace cac{
 namespace gtx
 {
 	/////////////////////////////
@@ -56,6 +56,6 @@ namespace gtx
 
 	/// @}
 }//namespace gtx
-}//namespace glm
+}//namespace cac
 
 #include "number_precision.inl"

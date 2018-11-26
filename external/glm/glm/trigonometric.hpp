@@ -1,5 +1,5 @@
 /// @ref core
-/// @file glm/trigonometric.hpp
+/// @file cac/trigonometric.hpp
 ///
 /// @see <a href="http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf">GLSL 4.20.8 specification, section 8.1 Angle and Trigonometry Functions</a>
 ///
@@ -12,7 +12,7 @@
 ///
 /// These all operate component-wise. The description is per component.
 ///
-/// Include <glm/trigonometric.hpp> to use these core features.
+/// Include <cac/trigonometric.hpp> to use these core features.
 ///
 /// @see ext_vector_trigonometric
 
@@ -21,7 +21,7 @@
 #include "detail/setup.hpp"
 #include "detail/qualifier.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_func_trigonometric
 	/// @{
@@ -205,6 +205,6 @@ namespace glm
 	GLM_FUNC_DECL vec<L, T, Q> atanh(vec<L, T, Q> const& x);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "detail/func_trigonometric.inl"

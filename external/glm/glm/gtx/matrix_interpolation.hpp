@@ -1,5 +1,5 @@
 /// @ref gtx_matrix_interpolation
-/// @file glm/gtx/matrix_interpolation.hpp
+/// @file cac/gtx/matrix_interpolation.hpp
 /// @author Ghenadii Ursachi (the.asteroth@gmail.com)
 ///
 /// @see core (dependence)
@@ -7,14 +7,14 @@
 /// @defgroup gtx_matrix_interpolation GLM_GTX_matrix_interpolation
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/matrix_interpolation.hpp> to use the features of this extension.
+/// Include <cac/gtx/matrix_interpolation.hpp> to use the features of this extension.
 ///
 /// Allows to directly interpolate two matrices.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_matrix_interpolation is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -24,7 +24,7 @@
 #	pragma message("GLM: GLM_GTX_matrix_interpolation extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_matrix_interpolation
 	/// @{
@@ -55,6 +55,6 @@ namespace glm
 		mat<4, 4, T, Q> const& m1, mat<4, 4, T, Q> const& m2, T const Delta);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "matrix_interpolation.inl"

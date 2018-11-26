@@ -1,10 +1,10 @@
 /// @ref core
-/// @file glm/detail/func_packing.inl
+/// @file cac/detail/func_packing.inl
 
 #include "../common.hpp"
 #include "type_half.hpp"
 
-namespace glm
+namespace cac
 {
 	GLM_FUNC_QUALIFIER uint packUnorm2x16(vec2 const& v)
 	{
@@ -113,7 +113,7 @@ namespace glm
 		return u.out;
 	}
 
-	GLM_FUNC_QUALIFIER glm::vec4 unpackSnorm4x8(uint p)
+	GLM_FUNC_QUALIFIER cac::vec4 unpackSnorm4x8(uint p)
 	{
 		union
 		{
@@ -181,7 +181,7 @@ namespace glm
 			detail::toFloat32(u.out[0]),
 			detail::toFloat32(u.out[1]));
 	}
-}//namespace glm
+}//namespace cac
 
 #if GLM_CONFIG_SIMD == GLM_ENABLE
 #	include "func_packing_simd.inl"

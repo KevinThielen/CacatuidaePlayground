@@ -1,11 +1,11 @@
 /// @ref gtx_wrap
 
-namespace glm
+namespace cac
 {
 	template<length_t L, typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER vec<L, T, Q> clamp(vec<L, T, Q> const& Texcoord)
 	{
-		return glm::clamp(Texcoord, vec<L, T, Q>(0), vec<L, T, Q>(1));
+		return cac::clamp(Texcoord, vec<L, T, Q>(0), vec<L, T, Q>(1));
 	}
 
 	template<typename genType>
@@ -17,7 +17,7 @@ namespace glm
 	template<length_t L, typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER vec<L, T, Q> repeat(vec<L, T, Q> const& Texcoord)
 	{
-		return glm::fract(Texcoord);
+		return cac::fract(Texcoord);
 	}
 
 	template<typename genType>
@@ -29,7 +29,7 @@ namespace glm
 	template<length_t L, typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER vec<L, T, Q> mirrorClamp(vec<L, T, Q> const& Texcoord)
 	{
-		return glm::fract(glm::abs(Texcoord));
+		return cac::fract(cac::abs(Texcoord));
 	}
 
 	template<typename genType>
@@ -41,12 +41,12 @@ namespace glm
 	template<length_t L, typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER vec<L, T, Q> mirrorRepeat(vec<L, T, Q> const& Texcoord)
 	{
-		vec<L, T, Q> const Abs = glm::abs(Texcoord);
-		vec<L, T, Q> const Clamp = glm::mod(glm::floor(Abs), vec<L, T, Q>(2));
-		vec<L, T, Q> const Floor = glm::floor(Abs);
+		vec<L, T, Q> const Abs = cac::abs(Texcoord);
+		vec<L, T, Q> const Clamp = cac::mod(cac::floor(Abs), vec<L, T, Q>(2));
+		vec<L, T, Q> const Floor = cac::floor(Abs);
 		vec<L, T, Q> const Rest = Abs - Floor;
 		vec<L, T, Q> const Mirror = Clamp + Rest;
-		return mix(Rest, vec<L, T, Q>(1) - Rest, glm::greaterThanEqual(Mirror, vec<L, T, Q>(1)));
+		return mix(Rest, vec<L, T, Q>(1) - Rest, cac::greaterThanEqual(Mirror, vec<L, T, Q>(1)));
 	}
 
 	template<typename genType>
@@ -54,4 +54,4 @@ namespace glm
 	{
 		return mirrorRepeat(vec<1, genType, defaultp>(Texcoord)).x;
 	}
-}//namespace glm
+}//namespace cac

@@ -3,7 +3,7 @@
 #include "../ext/quaternion_geometric.hpp"
 #include <limits>
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	template <typename T>
@@ -138,8 +138,8 @@ namespace detail
 	//)
 	//{
 	//	vec<3, valType> eulerAngle(pitch * valType(0.5), yaw * valType(0.5), roll * valType(0.5));
-	//	vec<3, valType> c = glm::cos(eulerAngle * valType(0.5));
-	//	vec<3, valType> s = glm::sin(eulerAngle * valType(0.5));
+	//	vec<3, valType> c = cac::cos(eulerAngle * valType(0.5));
+	//	vec<3, valType> s = cac::sin(eulerAngle * valType(0.5));
 	//
 	//	this->w = c.x * c.y * c.z + s.x * s.y * s.z;
 	//	this->x = s.x * c.y * c.z - c.x * s.y * s.z;
@@ -174,8 +174,8 @@ namespace detail
 	template<typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER qua<T, Q>::qua(vec<3, T, Q> const& eulerAngle)
 	{
-		vec<3, T, Q> c = glm::cos(eulerAngle * T(0.5));
-		vec<3, T, Q> s = glm::sin(eulerAngle * T(0.5));
+		vec<3, T, Q> c = cac::cos(eulerAngle * T(0.5));
+		vec<3, T, Q> s = cac::sin(eulerAngle * T(0.5));
 
 		this->w = c.x * c.y * c.z + s.x * s.y * s.z;
 		this->x = s.x * c.y * c.z - c.x * s.y * s.z;
@@ -314,8 +314,8 @@ namespace detail
 	GLM_FUNC_QUALIFIER vec<3, T, Q> operator*(qua<T, Q> const& q, vec<3, T, Q> const& v)
 	{
 		vec<3, T, Q> const QuatVector(q.x, q.y, q.z);
-		vec<3, T, Q> const uv(glm::cross(QuatVector, v));
-		vec<3, T, Q> const uuv(glm::cross(QuatVector, uv));
+		vec<3, T, Q> const uv(cac::cross(QuatVector, v));
+		vec<3, T, Q> const uuv(cac::cross(QuatVector, uv));
 
 		return v + ((uv * q.w) + uuv) * static_cast<T>(2);
 	}
@@ -323,7 +323,7 @@ namespace detail
 	template<typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER vec<3, T, Q> operator*(vec<3, T, Q> const& v, qua<T, Q> const& q)
 	{
-		return glm::inverse(q) * v;
+		return cac::inverse(q) * v;
 	}
 
 	template<typename T, qualifier Q>
@@ -335,7 +335,7 @@ namespace detail
 	template<typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER vec<4, T, Q> operator*(vec<4, T, Q> const& v, qua<T, Q> const& q)
 	{
-		return glm::inverse(q) * v;
+		return cac::inverse(q) * v;
 	}
 
 	template<typename T, qualifier Q>
@@ -371,7 +371,7 @@ namespace detail
 	{
 		return q1.x != q2.x || q1.y != q2.y || q1.z != q2.z || q1.w != q2.w;
 	}
-}//namespace glm
+}//namespace cac
 
 #if GLM_CONFIG_SIMD == GLM_ENABLE
 #	include "type_quat_simd.inl"

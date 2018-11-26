@@ -1,19 +1,19 @@
 /// @ref gtx_extended_min_max
-/// @file glm/gtx/extended_min_max.hpp
+/// @file cac/gtx/extended_min_max.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_extended_min_max GLM_GTX_extented_min_max
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/extented_min_max.hpp> to use the features of this extension.
+/// Include <cac/gtx/extented_min_max.hpp> to use the features of this extension.
 ///
 /// Min and max functions for 3 to 4 parameters.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_extented_min_max is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_extented_min_max extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_extended_min_max
 	/// @{
@@ -177,6 +177,6 @@ namespace glm
 
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "extended_min_max.inl"

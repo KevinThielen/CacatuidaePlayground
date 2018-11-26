@@ -1,12 +1,12 @@
 /// @ref ext_scalar_constants
-/// @file glm/ext/scalar_constants.hpp
+/// @file cac/ext/scalar_constants.hpp
 ///
 /// @defgroup ext_scalar_constants GLM_EXT_scalar_constants
 /// @ingroup ext
 ///
 /// Provides a list of constants and precomputed useful values.
 ///
-/// Include <glm/ext/scalar_constants.hpp> to use the features of this extension.
+/// Include <cac/ext/scalar_constants.hpp> to use the features of this extension.
 
 #pragma once
 
@@ -17,7 +17,7 @@
 #	pragma message("GLM: GLM_EXT_scalar_constants extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_scalar_constants
 	/// @{
@@ -31,6 +31,6 @@ namespace glm
 	GLM_FUNC_DECL GLM_CONSTEXPR genType pi();
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "scalar_constants.inl"

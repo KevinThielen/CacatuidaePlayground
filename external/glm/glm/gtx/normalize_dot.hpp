@@ -1,5 +1,5 @@
 /// @ref gtx_normalize_dot
-/// @file glm/gtx/normalize_dot.hpp
+/// @file cac/gtx/normalize_dot.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_fast_square_root (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtx_normalize_dot GLM_GTX_normalize_dot
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/normalized_dot.hpp> to use the features of this extension.
+/// Include <cac/gtx/normalized_dot.hpp> to use the features of this extension.
 ///
 /// Dot product of vectors that need to be normalize with a single square root.
 
@@ -24,7 +24,7 @@
 #	pragma message("GLM: GLM_GTX_normalize_dot extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_normalize_dot
 	/// @{
@@ -44,6 +44,6 @@ namespace glm
 	GLM_FUNC_DECL T fastNormalizeDot(vec<L, T, Q> const& x, vec<L, T, Q> const& y);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "normalize_dot.inl"

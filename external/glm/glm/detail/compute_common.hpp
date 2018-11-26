@@ -3,7 +3,7 @@
 #include "setup.hpp"
 #include <limits>
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	template<typename genFIType, bool /*signed*/>
@@ -47,4 +47,4 @@ namespace detail
 		}
 	};
 }//namespace detail
-}//namespace glm
+}//namespace cac

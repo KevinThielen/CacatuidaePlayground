@@ -1,12 +1,12 @@
 /// @ref ext_quaternion_float
-/// @file glm/ext/quaternion_float.hpp
+/// @file cac/ext/quaternion_float.hpp
 ///
 /// @defgroup ext_quaternion_float GLM_EXT_quaternion_float
 /// @ingroup ext
 ///
 /// Exposes single-precision floating point quaternion type.
 ///
-/// Include <glm/ext/quaternion_float.hpp> to use the features of this extension.
+/// Include <cac/ext/quaternion_float.hpp> to use the features of this extension.
 ///
 /// @see ext_quaternion_double
 /// @see ext_quaternion_float_precision
@@ -26,7 +26,7 @@
 #	pragma message("GLM: GLM_EXT_quaternion_float extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_quaternion_float
 	/// @{
@@ -35,5 +35,5 @@ namespace glm
 	typedef qua<float, defaultp>		quat;
 
 	/// @}
-} //namespace glm
+} //namespace cac
 

@@ -1,5 +1,5 @@
 /// @ref gtx_rotate_vector
-/// @file glm/gtx/rotate_vector.hpp
+/// @file cac/gtx/rotate_vector.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_transform (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtx_rotate_vector GLM_GTX_rotate_vector
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/rotate_vector.hpp> to use the features of this extension.
+/// Include <cac/gtx/rotate_vector.hpp> to use the features of this extension.
 ///
 /// Function to directly rotate a vector
 
@@ -17,7 +17,7 @@
 #include "../gtx/transform.hpp"
 #include "../gtc/epsilon.hpp"
 #include "../ext/vector_relational.hpp"
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_rotate_vector is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -27,7 +27,7 @@
 #	pragma message("GLM: GLM_GTX_rotate_vector extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_rotate_vector
 	/// @{
@@ -118,6 +118,6 @@ namespace glm
 		vec<3, T, Q> const& Up);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "rotate_vector.inl"

@@ -1,12 +1,12 @@
 /// @ref gtc_matrix_inverse
-/// @file glm/gtc/matrix_inverse.hpp
+/// @file cac/gtc/matrix_inverse.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtc_matrix_inverse GLM_GTC_matrix_inverse
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/matrix_integer.hpp> to use the features of this extension.
+/// Include <cac/gtc/matrix_integer.hpp> to use the features of this extension.
 ///
 /// Defines additional matrix inverting functions.
 
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTC_matrix_inverse extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_matrix_inverse
 	/// @{
@@ -45,6 +45,6 @@ namespace glm
 	GLM_FUNC_DECL genType inverseTranspose(genType const& m);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "matrix_inverse.inl"

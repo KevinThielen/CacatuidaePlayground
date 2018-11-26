@@ -1,12 +1,12 @@
 /// @ref ext_quaternion_common
-/// @file glm/ext/quaternion_common.hpp
+/// @file cac/ext/quaternion_common.hpp
 ///
 /// @defgroup ext_quaternion_common GLM_EXT_quaternion_common
 /// @ingroup ext
 ///
 /// Provides common functions for quaternion types
 ///
-/// Include <glm/ext/quaternion_common.hpp> to use the features of this extension.
+/// Include <cac/ext/quaternion_common.hpp> to use the features of this extension.
 ///
 /// @see ext_scalar_common
 /// @see ext_vector_common
@@ -32,7 +32,7 @@
 #	pragma message("GLM: GLM_EXT_quaternion_common extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_quaternion_common
 	/// @{
@@ -115,6 +115,6 @@ namespace glm
 	GLM_FUNC_DECL vec<4, bool, Q> isinf(qua<T, Q> const& x);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "quaternion_common.inl"

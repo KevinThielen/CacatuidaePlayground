@@ -1,5 +1,5 @@
 /// @ref core
-/// @file glm/detail/type_mat2x4.hpp
+/// @file cac/detail/type_mat2x4.hpp
 
 #pragma once
 
@@ -8,7 +8,7 @@
 #include <limits>
 #include <cstddef>
 
-namespace glm
+namespace cac
 {
 	template<typename T, qualifier Q>
 	struct mat<2, 4, T, Q>
@@ -154,7 +154,7 @@ namespace glm
 
 	template<typename T, qualifier Q>
 	GLM_FUNC_DECL bool operator!=(mat<2, 4, T, Q> const& m1, mat<2, 4, T, Q> const& m2);
-}//namespace glm
+}//namespace cac
 
 #ifndef GLM_EXTERNAL_TEMPLATE
 #include "type_mat2x4.inl"

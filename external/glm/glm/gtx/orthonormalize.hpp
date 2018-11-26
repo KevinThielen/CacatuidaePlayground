@@ -1,5 +1,5 @@
 /// @ref gtx_orthonormalize
-/// @file glm/gtx/orthonormalize.hpp
+/// @file cac/gtx/orthonormalize.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_extented_min_max (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtx_orthonormalize GLM_GTX_orthonormalize
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/orthonormalize.hpp> to use the features of this extension.
+/// Include <cac/gtx/orthonormalize.hpp> to use the features of this extension.
 ///
 /// Orthonormalize matrices.
 
@@ -26,7 +26,7 @@
 #	pragma message("GLM: GLM_GTX_orthonormalize extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_orthonormalize
 	/// @{
@@ -44,6 +44,6 @@ namespace glm
 	GLM_FUNC_DECL vec<3, T, Q> orthonormalize(vec<3, T, Q> const& x, vec<3, T, Q> const& y);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "orthonormalize.inl"

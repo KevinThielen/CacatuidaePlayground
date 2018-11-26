@@ -2,7 +2,7 @@
 #include "../common.hpp"
 #include "../detail/qualifier.hpp"
 
-namespace glm
+namespace cac
 {
 	template<length_t L, typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER GLM_CONSTEXPR vec<L, bool, Q> equal(vec<L, T, Q> const& x, vec<L, T, Q> const& y, T Epsilon)
@@ -27,4 +27,4 @@ namespace glm
 	{
 		return greaterThan(abs(x - y), Epsilon);
 	}
-}//namespace glm
+}//namespace cac

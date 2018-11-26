@@ -3,7 +3,7 @@ file(GLOB ROOT_INLINE *.inl)
 file(GLOB ROOT_HEADER *.hpp)
 file(GLOB ROOT_TEXT ../*.txt)
 file(GLOB ROOT_MD ../*.md)
-file(GLOB ROOT_NAT ../util/glm.natvis)
+file(GLOB ROOT_NAT ../util/cac.natvis)
 
 file(GLOB_RECURSE CORE_SOURCE ./detail/*.cpp)
 file(GLOB_RECURSE CORE_INLINE ./detail/*.inl)
@@ -44,7 +44,7 @@ source_group("SIMD Files" FILES ${SIMD_HEADER})
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/..)
 
-add_library(glm_static STATIC ${ROOT_TEXT} ${ROOT_MD} ${ROOT_NAT}
+add_library(cac_static STATIC ${ROOT_TEXT} ${ROOT_MD} ${ROOT_NAT}
 	${ROOT_SOURCE}    ${ROOT_INLINE}    ${ROOT_HEADER}
 	${CORE_SOURCE}    ${CORE_INLINE}    ${CORE_HEADER}
 	${EXT_SOURCE}     ${EXT_INLINE}     ${EXT_HEADER}
@@ -52,7 +52,7 @@ add_library(glm_static STATIC ${ROOT_TEXT} ${ROOT_MD} ${ROOT_NAT}
 	${GTX_SOURCE}     ${GTX_INLINE}     ${GTX_HEADER}
 	${SIMD_SOURCE}    ${SIMD_INLINE}    ${SIMD_HEADER})
 
-add_library(glm_shared SHARED ${ROOT_TEXT} ${ROOT_MD} ${ROOT_NAT}
+add_library(cac_shared SHARED ${ROOT_TEXT} ${ROOT_MD} ${ROOT_NAT}
 	${ROOT_SOURCE}    ${ROOT_INLINE}    ${ROOT_HEADER}
 	${CORE_SOURCE}    ${CORE_INLINE}    ${CORE_HEADER}
 	${EXT_SOURCE}     ${EXT_INLINE}     ${EXT_HEADER}

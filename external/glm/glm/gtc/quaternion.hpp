@@ -1,5 +1,5 @@
 /// @ref gtc_quaternion
-/// @file glm/gtc/quaternion.hpp
+/// @file cac/gtc/quaternion.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_constants (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtc_quaternion GLM_GTC_quaternion
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/quaternion.hpp> to use the features of this extension.
+/// Include <cac/gtc/quaternion.hpp> to use the features of this extension.
 ///
 /// Defines a templated quaternion type and several quaternion operations.
 
@@ -35,7 +35,7 @@
 #	pragma message("GLM: GLM_GTC_quaternion extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_quaternion
 	/// @{
@@ -168,6 +168,6 @@ namespace glm
 		vec<3, T, Q> const& direction,
 		vec<3, T, Q> const& up);
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "quaternion.inl"

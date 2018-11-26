@@ -1,19 +1,19 @@
 /// @ref gtx_closest_point
-/// @file glm/gtx/closest_point.hpp
+/// @file cac/gtx/closest_point.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_closest_point GLM_GTX_closest_point
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/closest_point.hpp> to use the features of this extension.
+/// Include <cac/gtx/closest_point.hpp> to use the features of this extension.
 ///
 /// Find the point on a straight line which is the closet of a point.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_closest_point is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_closest_point extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_closest_point
 	/// @{
@@ -44,6 +44,6 @@ namespace glm
 		vec<2, T, Q> const& b);
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "closest_point.inl"

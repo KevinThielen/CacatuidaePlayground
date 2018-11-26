@@ -1,5 +1,5 @@
 /// @ref gtx_fast_exponential
-/// @file glm/gtx/fast_exponential.hpp
+/// @file cac/gtx/fast_exponential.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_half_float (dependence)
@@ -7,14 +7,14 @@
 /// @defgroup gtx_fast_exponential GLM_GTX_fast_exponential
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/fast_exponential.hpp> to use the features of this extension.
+/// Include <cac/gtx/fast_exponential.hpp> to use the features of this extension.
 ///
 /// Fast but less accurate implementations of exponential based functions.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_fast_exponential is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -24,7 +24,7 @@
 #	pragma message("GLM: GLM_GTX_fast_exponential extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_fast_exponential
 	/// @{
@@ -90,6 +90,6 @@ namespace glm
 	GLM_FUNC_DECL vec<L, T, Q> fastLog2(vec<L, T, Q> const& x);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "fast_exponential.inl"

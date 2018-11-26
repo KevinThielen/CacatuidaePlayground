@@ -1,6 +1,6 @@
 /// @ref gtx_handed_coordinate_space
 
-namespace glm
+namespace cac
 {
 	template<typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER bool rightHanded
@@ -23,4 +23,4 @@ namespace glm
 	{
 		return dot(cross(normal, tangent), binormal) < T(0);
 	}
-}//namespace glm
+}//namespace cac

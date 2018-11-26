@@ -1,5 +1,5 @@
 /// @ref core
-/// @file glm/exponential.hpp
+/// @file cac/exponential.hpp
 ///
 /// @see <a href="http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf">GLSL 4.20.8 specification, section 8.2 Exponential Functions</a>
 ///
@@ -10,7 +10,7 @@
 ///
 /// These all operate component-wise. The description is per component.
 ///
-/// Include <glm/exponential.hpp> to use these core features.
+/// Include <cac/exponential.hpp> to use these core features.
 
 #pragma once
 
@@ -20,7 +20,7 @@
 #include "detail/type_vec4.hpp"
 #include <cmath>
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_func_exponential
 	/// @{
@@ -105,6 +105,6 @@ namespace glm
 	GLM_FUNC_DECL vec<L, T, Q> inversesqrt(vec<L, T, Q> const& v);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "detail/func_exponential.inl"

@@ -1,5 +1,5 @@
 /// @ref gtx_rotate_normalized_axis
-/// @file glm/gtx/rotate_normalized_axis.hpp
+/// @file cac/gtx/rotate_normalized_axis.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_matrix_transform
@@ -8,14 +8,14 @@
 /// @defgroup gtx_rotate_normalized_axis GLM_GTX_rotate_normalized_axis
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/rotate_normalized_axis.hpp> to use the features of this extension.
+/// Include <cac/gtx/rotate_normalized_axis.hpp> to use the features of this extension.
 ///
 /// Quaternions and matrices rotations around normalized axis.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtc/epsilon.hpp"
 #include "../gtc/quaternion.hpp"
 
@@ -27,7 +27,7 @@
 #	pragma message("GLM: GLM_GTX_rotate_normalized_axis extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_rotate_normalized_axis
 	/// @{
@@ -63,6 +63,6 @@ namespace glm
 		vec<3, T, Q> const& axis);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "rotate_normalized_axis.inl"

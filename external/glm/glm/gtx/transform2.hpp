@@ -1,5 +1,5 @@
 /// @ref gtx_transform2
-/// @file glm/gtx/transform2.hpp
+/// @file cac/gtx/transform2.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_transform (dependence)
@@ -7,14 +7,14 @@
 /// @defgroup gtx_transform2 GLM_GTX_transform2
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/transform2.hpp> to use the features of this extension.
+/// Include <cac/gtx/transform2.hpp> to use the features of this extension.
 ///
 /// Add extra transformation matrices
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtx/transform.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
@@ -25,7 +25,7 @@
 #	pragma message("GLM: GLM_GTX_transform2 extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_transform2
 	/// @{
@@ -84,6 +84,6 @@ namespace glm
 	GLM_FUNC_DECL mat<4, 4, T, Q> scaleBias(mat<4, 4, T, Q> const& m, T scale, T bias);
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "transform2.inl"

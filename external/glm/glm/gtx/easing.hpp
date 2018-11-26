@@ -1,5 +1,5 @@
 /// @ref gtx_easing
-/// @file glm/gtx/easing.hpp
+/// @file cac/gtx/easing.hpp
 /// @author Robert Chisholm
 ///
 /// @see core (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtx_easing GLM_GTX_easing
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/easing.hpp> to use the features of this extension.
+/// Include <cac/gtx/easing.hpp> to use the features of this extension.
 ///
 /// Easing functions for animations and transitons
 /// All functions take a parameter x in the range [0.0,1.0]
@@ -17,7 +17,7 @@
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtc/constants.hpp"
 #include "../detail/qualifier.hpp"
 
@@ -29,7 +29,7 @@
 #	pragma message("GLM: GLM_GTX_easing extension included")
 #endif
 
-namespace glm{
+namespace cac{
 	/// @addtogroup gtx_easing
 	/// @{
 
@@ -214,6 +214,6 @@ namespace glm{
 	GLM_FUNC_DECL genType bounceEaseInOut(genType const& a);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "easing.inl"

@@ -13,7 +13,9 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-
+#define STBI_ONLY_JPEG
+#define STB_IMAGE_IMPLEMENTATION
+#include <stb_image.h>
 
 FPSCounter fpsCounter;
 
@@ -47,10 +49,10 @@ float vertices[] = {
         1,  1, 1, 1, 0,
 
         //back
-        -1, 1, -1, 1, 1,
-	   -1, -1, -1, 1, 0,
-	    1, -1, -1, 0, 0,
-        1,  1, -1, 0, 1
+        -1, 1, -1, 1, 0,
+	   -1, -1, -1, 1, 1,
+	    1, -1, -1, 0, 1,
+        1,  1, -1, 0, 0
 	};
 
 
@@ -106,6 +108,7 @@ void changeTexture()
 }
 
 bool fired = false;
+bool rotate = false;
 //Swap buffers are handled by the browsers themselves
 void frame() 
 {
@@ -123,10 +126,9 @@ void frame()
     }
     else 
     {
-        transform = glm::rotate(transform, fpsCounter.deltaTime, glm::vec3(0.0f, 1.0f, 0.0f));
-
+        if(rotate)
+            transform = glm::rotate(transform, fpsCounter.deltaTime, glm::vec3(0.0f, 1.0f, 0.0f));
     }
-
 
     auto loc = glGetUniformLocation(program.id, "transform");
     glUniformMatrix4fv(loc, 1, GL_FALSE, glm::value_ptr(transform));
@@ -137,12 +139,27 @@ void frame()
     glUniform1i(texLoc, 0);
 
     glDrawElements(GL_TRIANGLES, 24, GL_UNSIGNED_INT, 0);
-    
-
 
     fpsCounter.update();
 }
 
+char* mappedKey = "d";
+unsigned int keyCode = 'd';
+
+EM_BOOL input_callback(int eventType, const EmscriptenKeyboardEvent* keyEvent, void* userData)
+{
+
+    printf("\nKey pressed: code %s  key: %s\n", keyEvent->key, keyEvent->code);
+    printf("Mapped key code: %i    Pressed KeyCode: %i", keyCode, keyEvent->which);
+
+    //TODO: which is deprecated but I aint not doing no strcmp for my input
+    if(keyEvent->which == keyCode)// ||  strcmp(keyEvent->code, mappedKey))
+    {
+        printf("HIT THAT");
+        rotate = true;
+    }
+    return 1;
+}
 
 int main()
 {
@@ -194,7 +211,13 @@ int main()
     cac::FileLoader fileLoader;
     fileLoader.load(file);
 
+    //input
+    emscripten_set_keypress_callback(nullptr, nullptr, 1, input_callback);
+
+
     emscripten_set_main_loop(frame, 0, 1);
+
+
 
     return 0;
 }

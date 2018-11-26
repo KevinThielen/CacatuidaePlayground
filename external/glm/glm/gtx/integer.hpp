@@ -1,19 +1,19 @@
 /// @ref gtx_integer
-/// @file glm/gtx/integer.hpp
+/// @file cac/gtx/integer.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_integer GLM_GTX_integer
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/integer.hpp> to use the features of this extension.
+/// Include <cac/gtx/integer.hpp> to use the features of this extension.
 ///
 /// Add support for integer for core functions
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtc/integer.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
@@ -24,7 +24,7 @@
 #	pragma message("GLM: GLM_GTX_integer extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_integer
 	/// @{
@@ -71,6 +71,6 @@ namespace glm
 	GLM_FUNC_DECL uint nlz(uint x);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "integer.inl"

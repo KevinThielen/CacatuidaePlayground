@@ -1,5 +1,5 @@
 /// @ref core
-/// @file glm/matrix.hpp
+/// @file cac/matrix.hpp
 ///
 /// @see <a href="http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf">GLSL 4.20.8 specification, section 8.6 Matrix Functions</a>
 ///
@@ -8,7 +8,7 @@
 ///
 /// Provides GLSL matrix functions.
 ///
-/// Include <glm/matrix.hpp> to use these core features.
+/// Include <cac/matrix.hpp> to use these core features.
 
 #pragma once
 
@@ -28,7 +28,7 @@
 #include "mat4x3.hpp"
 #include "mat4x4.hpp"
 
-namespace glm {
+namespace cac {
 namespace detail
 {
 	template<length_t C, length_t R, typename T, qualifier Q>
@@ -156,6 +156,6 @@ namespace detail
 	GLM_FUNC_DECL mat<C, R, T, Q> inverse(mat<C, R, T, Q> const& m);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "detail/func_matrix.inl"

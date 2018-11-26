@@ -1,19 +1,19 @@
 /// @ref gtx_vector_query
-/// @file glm/gtx/vector_query.hpp
+/// @file cac/gtx/vector_query.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_vector_query GLM_GTX_vector_query
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/vector_query.hpp> to use the features of this extension.
+/// Include <cac/gtx/vector_query.hpp> to use the features of this extension.
 ///
 /// Query informations of vector types
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include <cfloat>
 #include <limits>
 
@@ -25,7 +25,7 @@
 #	pragma message("GLM: GLM_GTX_vector_query extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_vector_query
 	/// @{
@@ -61,6 +61,6 @@ namespace glm
 	GLM_FUNC_DECL bool areOrthonormal(vec<L, T, Q> const& v0, vec<L, T, Q> const& v1, T const& epsilon);
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "vector_query.inl"

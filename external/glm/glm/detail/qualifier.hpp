@@ -2,7 +2,7 @@
 
 #include "setup.hpp"
 
-namespace glm
+namespace cac
 {
 	/// Qualify GLM types in term of alignment (packed, aligned) and precision in term of ULPs (lowp, mediump, highp)
 	enum qualifier
@@ -55,7 +55,7 @@ namespace glm
 
 namespace detail
 {
-	template<glm::qualifier P>
+	template<cac::qualifier P>
 	struct is_aligned
 	{
 		static const bool value = false;
@@ -63,19 +63,19 @@ namespace detail
 
 #	if GLM_CONFIG_ALIGNED_GENTYPES == GLM_ENABLE
 		template<>
-		struct is_aligned<glm::aligned_lowp>
+		struct is_aligned<cac::aligned_lowp>
 		{
 			static const bool value = true;
 		};
 
 		template<>
-		struct is_aligned<glm::aligned_mediump>
+		struct is_aligned<cac::aligned_mediump>
 		{
 			static const bool value = true;
 		};
 
 		template<>
-		struct is_aligned<glm::aligned_highp>
+		struct is_aligned<cac::aligned_highp>
 		{
 			static const bool value = true;
 		};
@@ -111,37 +111,37 @@ namespace detail
 	template<>
 	struct storage<4, float, true>
 	{
-		typedef glm_f32vec4 type;
+		typedef cac_f32vec4 type;
 	};
 
 	template<>
 	struct storage<4, int, true>
 	{
-		typedef glm_i32vec4 type;
+		typedef cac_i32vec4 type;
 	};
 
 	template<>
 	struct storage<4, unsigned int, true>
 	{
-		typedef glm_u32vec4 type;
+		typedef cac_u32vec4 type;
 	};
 
 	template<>
 	struct storage<2, double, true>
 	{
-		typedef glm_f64vec2 type;
+		typedef cac_f64vec2 type;
 	};
 
 	template<>
 	struct storage<2, detail::int64, true>
 	{
-		typedef glm_i64vec2 type;
+		typedef cac_i64vec2 type;
 	};
 
 	template<>
 	struct storage<2, detail::uint64, true>
 	{
-		typedef glm_u64vec2 type;
+		typedef cac_u64vec2 type;
 	};
 #	endif
 
@@ -149,7 +149,7 @@ namespace detail
 	template<>
 	struct storage<4, double, true>
 	{
-		typedef glm_f64vec4 type;
+		typedef cac_f64vec4 type;
 	};
 #	endif
 
@@ -157,13 +157,13 @@ namespace detail
 	template<>
 	struct storage<4, detail::int64, true>
 	{
-		typedef glm_i64vec4 type;
+		typedef cac_i64vec4 type;
 	};
 
 	template<>
 	struct storage<4, detail::uint64, true>
 	{
-		typedef glm_u64vec4 type;
+		typedef cac_u64vec4 type;
 	};
 #	endif
 
@@ -207,4 +207,4 @@ namespace detail
 		}
 	};
 }//namespace detail
-}//namespace glm
+}//namespace cac

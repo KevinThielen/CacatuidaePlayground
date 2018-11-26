@@ -2,7 +2,7 @@
 
 #include "../integer.hpp"
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	template<length_t L, typename T, qualifier Q, bool compute = false>
@@ -214,7 +214,7 @@ namespace detail
 	template<typename genType>
 	GLM_FUNC_QUALIFIER bool isPowerOfTwo(genType Value)
 	{
-		genType const Result = glm::abs(Value);
+		genType const Result = cac::abs(Value);
 		return !(Result & (Result - 1));
 	}
 
@@ -340,4 +340,4 @@ namespace detail
 	{
 		return detail::functor2<vec, L, T, Q>::call(roundMultiple, Source, Multiple);
 	}
-}//namespace glm
+}//namespace cac

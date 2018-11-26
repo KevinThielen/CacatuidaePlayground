@@ -1,11 +1,11 @@
 /// @ref core
-/// @file glm/ext/vector_double4_precision.hpp
+/// @file cac/ext/vector_double4_precision.hpp
 
 #pragma once
 #include "../detail/setup.hpp"
 #include "../detail/type_vec4.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_vector_precision
 	/// @{
@@ -32,4 +32,4 @@ namespace glm
 	typedef vec<4, double, lowp>		lowp_dvec4;
 
 	/// @}
-}//namespace glm
+}//namespace cac

@@ -1,5 +1,5 @@
 /// @ref ext_matrix_transform
-/// @file glm/ext/matrix_transform.hpp
+/// @file cac/ext/matrix_transform.hpp
 ///
 /// @defgroup ext_matrix_transform GLM_EXT_matrix_transform
 /// @ingroup ext
@@ -12,7 +12,7 @@
 /// (perspective, ortho, etc) are designed to expect. The OpenGL compatibility
 /// specifications defines the particular layout of this eye space.
 ///
-/// Include <glm/ext/matrix_transform.hpp> to use the features of this extension.
+/// Include <cac/ext/matrix_transform.hpp> to use the features of this extension.
 ///
 /// @see ext_matrix_projection
 /// @see ext_matrix_clip_space
@@ -29,7 +29,7 @@
 #	pragma message("GLM: GLM_EXT_matrix_transform extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_matrix_transform
 	/// @{
@@ -47,10 +47,10 @@ namespace glm
 	/// @tparam Q A value from qualifier enum
 	///
 	/// @code
-	/// #include <glm/glm.hpp>
-	/// #include <glm/gtc/matrix_transform.hpp>
+	/// #include <cac/cac.hpp>
+	/// #include <cac/gtc/matrix_transform.hpp>
 	/// ...
-	/// glm::mat4 m = glm::translate(glm::mat4(1.0f), glm::vec3(1.0f));
+	/// cac::mat4 m = cac::translate(cac::mat4(1.0f), cac::vec3(1.0f));
 	/// // m[0][0] == 1.0f, m[0][1] == 0.0f, m[0][2] == 0.0f, m[0][3] == 0.0f
 	/// // m[1][0] == 0.0f, m[1][1] == 1.0f, m[1][2] == 0.0f, m[1][3] == 0.0f
 	/// // m[2][0] == 0.0f, m[2][1] == 0.0f, m[2][2] == 1.0f, m[2][3] == 0.0f
@@ -139,6 +139,6 @@ namespace glm
 		vec<3, T, Q> const& eye, vec<3, T, Q> const& center, vec<3, T, Q> const& up);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "matrix_transform.inl"

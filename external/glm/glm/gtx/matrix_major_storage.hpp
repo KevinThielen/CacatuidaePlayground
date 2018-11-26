@@ -1,5 +1,5 @@
 /// @ref gtx_matrix_major_storage
-/// @file glm/gtx/matrix_major_storage.hpp
+/// @file cac/gtx/matrix_major_storage.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_extented_min_max (dependence)
@@ -7,14 +7,14 @@
 /// @defgroup gtx_matrix_major_storage GLM_GTX_matrix_major_storage
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/matrix_major_storage.hpp> to use the features of this extension.
+/// Include <cac/gtx/matrix_major_storage.hpp> to use the features of this extension.
 ///
 /// Build matrices with specific matrix order, row or column
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_matrix_major_storage is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -24,7 +24,7 @@
 #	pragma message("GLM: GLM_GTX_matrix_major_storage extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_matrix_major_storage
 	/// @{
@@ -114,6 +114,6 @@ namespace glm
 		mat<4, 4, T, Q> const& m);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "matrix_major_storage.inl"

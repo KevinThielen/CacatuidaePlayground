@@ -1,12 +1,12 @@
 /// @ref gtc_ulp
-/// @file glm/gtc/ulp.hpp
+/// @file cac/gtc/ulp.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtc_ulp GLM_GTC_ulp
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/ulp.hpp> to use the features of this extension.
+/// Include <cac/gtc/ulp.hpp> to use the features of this extension.
 ///
 /// Allow the measurement of the accuracy of a function against a reference
 /// implementation. This extension works on floating-point data and provide results
@@ -22,7 +22,7 @@
 #	pragma message("GLM: GLM_GTC_ulp extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_ulp
 	/// @{
@@ -58,6 +58,6 @@ namespace glm
 	GLM_FUNC_DECL vec<2, uint, Q> float_distance(vec<2, T, Q> const& x, vec<2, T, Q> const& y);
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "ulp.inl"

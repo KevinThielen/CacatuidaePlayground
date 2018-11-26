@@ -1,10 +1,10 @@
 /// @ref core
-/// @file glm/ext/matrix_double3x3.hpp
+/// @file cac/ext/matrix_double3x3.hpp
 
 #pragma once
 #include "../detail/type_mat3x3.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_matrix
 	/// @{
@@ -20,4 +20,4 @@ namespace glm
 	typedef mat<3, 3, double, defaultp>		dmat3;
 
 	/// @}
-}//namespace glm
+}//namespace cac

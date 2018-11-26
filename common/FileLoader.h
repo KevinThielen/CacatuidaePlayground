@@ -2,8 +2,8 @@
 #define CACATUIDAE_RESOURCES_LOADER
 
 #include <emscripten.h>
-#define STB_IMAGE_IMPLEMENTATION
-#include <stb_image.h>
+#include <cstring>
+
 namespace cac 
 {
     struct File 
@@ -21,33 +21,23 @@ namespace cac
     class FileLoader 
     {
     public:
-        void load(File& file);
+        void load(File& file)
+        {
+             file.loaded = false;
+    emscripten_async_wget_data(file.path, &file, this->onLoad, this->onError);
+        }
 
     private:
-        static void onLoad(void* arg, void* buffer, int size);
-        static void onError(void* arg);
+        static void onLoad(void* arg, void* buffer, int size)
+        {
+            File* filePtr = static_cast<File*>(arg);
+            filePtr->size = size;
+            filePtr->loaded = true;
+            filePtr->data = new unsigned char[size];
+            std::memcpy(filePtr->data, buffer, size);
+        }
+        static void onError(void* arg){}
     };
-}
-
-void cac::FileLoader::onLoad(void* arg, void* buffer, int size)
-{
-    File* filePtr = static_cast<File*>(arg);
-
-    filePtr->size = size;
-    filePtr->loaded = true;
-    filePtr->data = new unsigned char[size];
-    memcpy(filePtr->data, buffer, size);
-}
-
-
-void cac::FileLoader::onError(void* arg)
-{
-}
-
-void cac::FileLoader::load(File& file)
-{
-    file.loaded = false;
-    emscripten_async_wget_data(file.path, &file, (em_async_wget_onload_func) &this->onLoad, (em_arg_callback_func) &this->onError);
 }
 
 #endif

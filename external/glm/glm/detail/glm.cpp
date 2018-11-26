@@ -1,16 +1,16 @@
 /// @ref core
-/// @file glm/glm.cpp
+/// @file cac/cac.cpp
 
 #define GLM_ENABLE_EXPERIMENTAL
-#include <glm/gtx/dual_quaternion.hpp>
-#include <glm/gtc/vec1.hpp>
-#include <glm/gtc/quaternion.hpp>
-#include <glm/ext/scalar_float_sized.hpp>
-#include <glm/ext/scalar_int_sized.hpp>
-#include <glm/ext/scalar_uint_sized.hpp>
-#include <glm/glm.hpp>
+#include <cac/gtx/dual_quaternion.hpp>
+#include <cac/gtc/vec1.hpp>
+#include <cac/gtc/quaternion.hpp>
+#include <cac/ext/scalar_float_sized.hpp>
+#include <cac/ext/scalar_int_sized.hpp>
+#include <cac/ext/scalar_uint_sized.hpp>
+#include <cac/cac.hpp>
 
-namespace glm
+namespace cac
 {
 // tvec1 type explicit instantiation
 template struct vec<1, uint8, lowp>;
@@ -258,5 +258,5 @@ template struct tdualquat<float64, mediump>;
 template struct tdualquat<float32, highp>;
 template struct tdualquat<float64, highp>;
 
-}//namespace glm
+}//namespace cac
 

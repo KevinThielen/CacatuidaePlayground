@@ -1,19 +1,19 @@
 /// @ref gtx_texture
-/// @file glm/gtx/texture.hpp
+/// @file cac/gtx/texture.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_texture GLM_GTX_texture
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/texture.hpp> to use the features of this extension.
+/// Include <cac/gtx/texture.hpp> to use the features of this extension.
 ///
 /// Wrapping mode of texture coordinates.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtc/integer.hpp"
 #include "../gtx/component_wise.hpp"
 
@@ -25,7 +25,7 @@
 #	pragma message("GLM: GLM_GTX_texture extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_texture
 	/// @{
@@ -40,7 +40,7 @@ namespace glm
 	T levels(vec<L, T, Q> const& Extent);
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "texture.inl"
 

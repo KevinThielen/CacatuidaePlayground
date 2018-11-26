@@ -1,5 +1,5 @@
 /// @ref core
-/// @file glm/detail/func_common.inl
+/// @file cac/detail/func_common.inl
 
 #include "../vector_relational.hpp"
 #include "compute_common.hpp"
@@ -9,7 +9,7 @@
 #include "_vectorize.hpp"
 #include <limits>
 
-namespace glm
+namespace cac
 {
 	// min
 	template<typename genType>
@@ -62,9 +62,9 @@ namespace glm
 		}
 #	endif
 
-}//namespace glm
+}//namespace cac
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	template<length_t L, typename T, qualifier Q, bool Aligned>
@@ -144,7 +144,7 @@ namespace detail
 	{
 		GLM_FUNC_QUALIFIER static vec<L, T, Q> call(vec<L, T, Q> const& x)
 		{
-			return vec<L, T, Q>(glm::lessThan(vec<L, T, Q>(0), x)) - vec<L, T, Q>(glm::lessThan(x, vec<L, T, Q>(0)));
+			return vec<L, T, Q>(cac::lessThan(vec<L, T, Q>(0), x)) - vec<L, T, Q>(cac::lessThan(x, vec<L, T, Q>(0)));
 		}
 	};
 
@@ -212,7 +212,7 @@ namespace detail
 	{
 		GLM_FUNC_QUALIFIER static vec<L, T, Q> call(vec<L, T, Q> const& a, vec<L, T, Q> const& b)
 		{
-			GLM_STATIC_ASSERT(std::numeric_limits<T>::is_iec559, "'mod' only accept floating-point inputs. Include <glm/gtc/integer.hpp> for integer inputs.");
+			GLM_STATIC_ASSERT(std::numeric_limits<T>::is_iec559, "'mod' only accept floating-point inputs. Include <cac/gtc/integer.hpp> for integer inputs.");
 			return a - b * floor(a / b);
 		}
 	};
@@ -249,7 +249,7 @@ namespace detail
 	{
 		GLM_FUNC_QUALIFIER static vec<L, T, Q> call(vec<L, T, Q> const& edge, vec<L, T, Q> const& x)
 		{
-			return mix(vec<L, T, Q>(1), vec<L, T, Q>(0), glm::lessThan(x, edge));
+			return mix(vec<L, T, Q>(1), vec<L, T, Q>(0), cac::lessThan(x, edge));
 		}
 	};
 
@@ -400,7 +400,7 @@ namespace detail
 	GLM_FUNC_QUALIFIER genType mod(genType x, genType y)
 	{
 #		if GLM_COMPILER & GLM_COMPILER_CUDA
-			// Another Cuda compiler bug https://github.com/g-truc/glm/issues/530
+			// Another Cuda compiler bug https://github.com/g-truc/cac/issues/530
 			vec<1, genType, defaultp> Result(mod(vec<1, genType, defaultp>(x), y));
 			return Result.x;
 #		else
@@ -614,7 +614,7 @@ namespace detail
 
 		vec<L, bool, Q> Result;
 		for (length_t l = 0; l < v.length(); ++l)
-			Result[l] = glm::isnan(v[l]);
+			Result[l] = cac::isnan(v[l]);
 		return Result;
 	}
 
@@ -656,7 +656,7 @@ namespace detail
 
 		vec<L, bool, Q> Result;
 		for (length_t l = 0; l < v.length(); ++l)
-			Result[l] = glm::isinf(v[l]);
+			Result[l] = cac::isinf(v[l]);
 		return Result;
 	}
 
@@ -779,7 +779,7 @@ namespace detail
 			Result[l] = std::ldexp(v[l], exp[l]);
 		return Result;
 	}
-}//namespace glm
+}//namespace cac
 
 #if GLM_CONFIG_SIMD == GLM_ENABLE
 #	include "func_common_simd.inl"

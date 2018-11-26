@@ -1,19 +1,19 @@
 /// @ref gtx_spline
-/// @file glm/gtx/spline.hpp
+/// @file cac/gtx/spline.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_spline GLM_GTX_spline
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/spline.hpp> to use the features of this extension.
+/// Include <cac/gtx/spline.hpp> to use the features of this extension.
 ///
 /// Spline functions
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtx/optimum_pow.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
@@ -24,7 +24,7 @@
 #	pragma message("GLM: GLM_GTX_spline extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_spline
 	/// @{
@@ -60,6 +60,6 @@ namespace glm
 		typename genType::value_type const& s);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "spline.inl"

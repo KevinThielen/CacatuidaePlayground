@@ -1,12 +1,12 @@
 /// @ref ext_vector_double1
-/// @file glm/ext/vector_double1.hpp
+/// @file cac/ext/vector_double1.hpp
 ///
 /// @defgroup ext_vector_double1 GLM_EXT_vector_double1
 /// @ingroup ext
 ///
 /// Exposes double-precision floating point vector type with one component.
 ///
-/// Include <glm/ext/vector_double1.hpp> to use the features of this extension.
+/// Include <cac/ext/vector_double1.hpp> to use the features of this extension.
 ///
 /// @see ext_vector_double1_precision extension.
 /// @see ext_vector_float1 extension.
@@ -19,7 +19,7 @@
 #	pragma message("GLM: GLM_EXT_vector_dvec1 extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_vector_double1
 	/// @{
@@ -28,4 +28,4 @@ namespace glm
 	typedef vec<1, double, defaultp>		dvec1;
 
 	/// @}
-}//namespace glm
+}//namespace cac

@@ -64,7 +64,7 @@ typedef union
 		(d) = iw_u.value;					\
 	} while (0)
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	GLM_FUNC_QUALIFIER float nextafterf(float x, float y)
@@ -179,13 +179,13 @@ namespace detail
 		return x;
 	}
 }//namespace detail
-}//namespace glm
+}//namespace cac
 
 #if(GLM_COMPILER & GLM_COMPILER_VC)
 #	pragma warning(pop)
 #endif
 
-namespace glm
+namespace cac
 {
 	template<>
 	GLM_FUNC_QUALIFIER float next_float(float const& x)
@@ -303,7 +303,7 @@ namespace glm
 		if(x < y)
 		{
 			T temp = x;
-			while(glm::epsilonNotEqual(temp, y, glm::epsilon<T>()))// && ulp < std::numeric_limits<std::size_t>::max())
+			while(cac::epsilonNotEqual(temp, y, cac::epsilon<T>()))// && ulp < std::numeric_limits<std::size_t>::max())
 			{
 				++ulp;
 				temp = next_float(temp);
@@ -312,7 +312,7 @@ namespace glm
 		else if(y < x)
 		{
 			T temp = y;
-			while(glm::epsilonNotEqual(temp, x, glm::epsilon<T>()))// && ulp < std::numeric_limits<std::size_t>::max())
+			while(cac::epsilonNotEqual(temp, x, cac::epsilon<T>()))// && ulp < std::numeric_limits<std::size_t>::max())
 			{
 				++ulp;
 				temp = next_float(temp);
@@ -334,4 +334,4 @@ namespace glm
 			Result[i] = float_distance(x[i], y[i]);
 		return Result;
 	}
-}//namespace glm
+}//namespace cac

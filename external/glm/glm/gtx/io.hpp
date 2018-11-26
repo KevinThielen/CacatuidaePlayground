@@ -1,5 +1,5 @@
 /// @ref gtx_io
-/// @file glm/gtx/io.hpp
+/// @file cac/gtx/io.hpp
 /// @author Jan P Springer (regnirpsj@gmail.com)
 ///
 /// @see core (dependence)
@@ -9,18 +9,18 @@
 /// @defgroup gtx_io GLM_GTX_io
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/io.hpp> to use the features of this extension.
+/// Include <cac/gtx/io.hpp> to use the features of this extension.
 ///
-/// std::[w]ostream support for glm types
+/// std::[w]ostream support for cac types
 ///
-/// std::[w]ostream support for glm types + qualifier/width/etc. manipulators
+/// std::[w]ostream support for cac types + qualifier/width/etc. manipulators
 /// based on howard hinnant's std::chrono io proposal
 /// [http://home.roadrunner.com/~hinnant/bloomington/chrono_io.html]
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtx/quaternion.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
@@ -35,7 +35,7 @@
 #include <locale>  // std::locale, std::locale::facet, std::locale::id
 #include <utility> // std::pair<>
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_io
 	/// @{
@@ -196,6 +196,6 @@ namespace glm
                                                          std::pair<mat<4, 4, T, Q> const, mat<4, 4, T, Q> const> const&);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "io.inl"

@@ -1,5 +1,5 @@
 /// @ref gtx_vector_angle
-/// @file glm/gtx/vector_angle.hpp
+/// @file cac/gtx/vector_angle.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_quaternion (dependence)
@@ -8,14 +8,14 @@
 /// @defgroup gtx_vector_angle GLM_GTX_vector_angle
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/vector_angle.hpp> to use the features of this extension.
+/// Include <cac/gtx/vector_angle.hpp> to use the features of this extension.
 ///
 /// Compute angle between vectors
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtc/epsilon.hpp"
 #include "../gtx/quaternion.hpp"
 #include "../gtx/rotate_vector.hpp"
@@ -28,7 +28,7 @@
 #	pragma message("GLM: GLM_GTX_vector_angle extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_vector_angle
 	/// @{
@@ -52,6 +52,6 @@ namespace glm
 	GLM_FUNC_DECL T orientedAngle(vec<3, T, Q> const& x, vec<3, T, Q> const& y, vec<3, T, Q> const& ref);
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "vector_angle.inl"

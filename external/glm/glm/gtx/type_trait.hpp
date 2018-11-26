@@ -1,12 +1,12 @@
 /// @ref gtx_type_trait
-/// @file glm/gtx/type_trait.hpp
+/// @file cac/gtx/type_trait.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_type_trait GLM_GTX_type_trait
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/type_trait.hpp> to use the features of this extension.
+/// Include <cac/gtx/type_trait.hpp> to use the features of this extension.
 ///
 /// Defines traits for each type.
 
@@ -25,7 +25,7 @@
 #	pragma message("GLM: GLM_GTX_type_trait extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_type_trait
 	/// @{
@@ -80,6 +80,6 @@ namespace glm
 	};
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "type_trait.inl"

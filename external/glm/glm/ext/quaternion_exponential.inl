@@ -1,10 +1,10 @@
-namespace glm
+namespace cac
 {
 	template<typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER qua<T, Q> exp(qua<T, Q> const& q)
 	{
 		vec<3, T, Q> u(q.x, q.y, q.z);
-		T const Angle = glm::length(u);
+		T const Angle = cac::length(u);
 		if (Angle < epsilon<T>())
 			return qua<T, Q>();
 
@@ -64,6 +64,6 @@ namespace glm
 	{
 		return pow(x, static_cast<T>(0.5));
 	}
-}//namespace glm
+}//namespace cac
 
 

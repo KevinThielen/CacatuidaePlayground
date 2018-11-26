@@ -1,12 +1,12 @@
 /// @ref gtx_fast_square_root
-/// @file glm/gtx/fast_square_root.hpp
+/// @file cac/gtx/fast_square_root.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_fast_square_root GLM_GTX_fast_square_root
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/fast_square_root.hpp> to use the features of this extension.
+/// Include <cac/gtx/fast_square_root.hpp> to use the features of this extension.
 ///
 /// Fast but less accurate implementations of square root based functions.
 /// - Sqrt optimisation based on Newton's method,
@@ -27,7 +27,7 @@
 #	pragma message("GLM: GLM_GTX_fast_square_root extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_fast_square_root
 	/// @{
@@ -87,6 +87,6 @@ namespace glm
 	GLM_FUNC_DECL genType fastNormalize(genType const& x);
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "fast_square_root.inl"

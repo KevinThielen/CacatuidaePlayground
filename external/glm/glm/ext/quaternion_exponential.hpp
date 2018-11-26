@@ -1,12 +1,12 @@
 /// @ref ext_quaternion_exponential
-/// @file glm/ext/quaternion_exponential.hpp
+/// @file cac/ext/quaternion_exponential.hpp
 ///
 /// @defgroup ext_quaternion_exponential GLM_EXT_quaternion_exponential
 /// @ingroup ext
 ///
 /// Provides exponential functions for quaternion types
 ///
-/// Include <glm/ext/quaternion_exponential.hpp> to use the features of this extension.
+/// Include <cac/ext/quaternion_exponential.hpp> to use the features of this extension.
 ///
 /// @see core_exponential
 /// @see ext_quaternion_float
@@ -24,7 +24,7 @@
 #	pragma message("GLM: GLM_EXT_quaternion_exponential extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_quaternion_transform
 	/// @{
@@ -58,6 +58,6 @@ namespace glm
 	GLM_FUNC_DECL qua<T, Q> sqrt(qua<T, Q> const& q);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "quaternion_exponential.inl"

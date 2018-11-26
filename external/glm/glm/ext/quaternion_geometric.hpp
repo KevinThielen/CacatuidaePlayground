@@ -1,12 +1,12 @@
 /// @ref ext_quaternion_geometric
-/// @file glm/ext/quaternion_geometric.hpp
+/// @file cac/ext/quaternion_geometric.hpp
 ///
 /// @defgroup ext_quaternion_geometric GLM_EXT_quaternion_geometric
 /// @ingroup ext
 ///
 /// Provides geometric functions for quaternion types
 ///
-/// Include <glm/ext/quaternion_geometric.hpp> to use the features of this extension.
+/// Include <cac/ext/quaternion_geometric.hpp> to use the features of this extension.
 ///
 /// @see core_geometric
 /// @see ext_quaternion_float
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_EXT_quaternion_geometric extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_quaternion_geometric
 	/// @{
@@ -65,6 +65,6 @@ namespace glm
 	GLM_FUNC_QUALIFIER qua<T, Q> cross(qua<T, Q> const& q1, qua<T, Q> const& q2);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "quaternion_geometric.inl"

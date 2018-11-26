@@ -1,5 +1,5 @@
 /// @ref gtc_type_precision
-/// @file glm/gtc/type_precision.hpp
+/// @file cac/gtc/type_precision.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_quaternion (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtc_type_precision GLM_GTC_type_precision
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/type_precision.hpp> to use the features of this extension.
+/// Include <cac/gtc/type_precision.hpp> to use the features of this extension.
 ///
 /// Defines specific C++-based qualifier types.
 
@@ -36,7 +36,7 @@
 #	pragma message("GLM: GLM_GTC_type_precision extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	///////////////////////////
 	// Signed int vector types
@@ -2126,6 +2126,6 @@ namespace glm
 #	endif//GLM_FORCE_SINGLE_ONLY
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "type_precision.inl"

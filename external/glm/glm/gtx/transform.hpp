@@ -1,5 +1,5 @@
 /// @ref gtx_transform
-/// @file glm/gtx/transform.hpp
+/// @file cac/gtx/transform.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_matrix_transform (dependence)
@@ -9,14 +9,14 @@
 /// @defgroup gtx_transform GLM_GTX_transform
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/transform.hpp> to use the features of this extension.
+/// Include <cac/gtx/transform.hpp> to use the features of this extension.
 ///
 /// Add transformation matrices
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtc/matrix_transform.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
@@ -27,7 +27,7 @@
 #	pragma message("GLM: GLM_GTX_transform extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_transform
 	/// @{
@@ -55,6 +55,6 @@ namespace glm
 		vec<3, T, Q> const& v);
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "transform.inl"

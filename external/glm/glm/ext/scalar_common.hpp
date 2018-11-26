@@ -1,12 +1,12 @@
 /// @ref ext_scalar_common
-/// @file glm/ext/scalar_common.hpp
+/// @file cac/ext/scalar_common.hpp
 ///
 /// @defgroup ext_scalar_common GLM_EXT_scalar_common
 /// @ingroup ext
 ///
 /// Exposes min and max functions for 3 to 4 scalar parameters.
 ///
-/// Include <glm/ext/scalar_common.hpp> to use the features of this extension.
+/// Include <cac/ext/scalar_common.hpp> to use the features of this extension.
 ///
 /// @see core_func_common
 /// @see ext_vector_common
@@ -20,7 +20,7 @@
 #	pragma message("GLM: GLM_EXT_scalar_common extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_scalar_common
 	/// @{
@@ -98,6 +98,6 @@ namespace glm
 	GLM_FUNC_DECL T fmax(T a, T b, T C, T D);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "scalar_common.inl"

@@ -1,12 +1,12 @@
 /// @ref ext_vector_int1
-/// @file glm/ext/vector_int1.hpp
+/// @file cac/ext/vector_int1.hpp
 ///
 /// @defgroup ext_vector_int1 GLM_EXT_vector_int1
 /// @ingroup ext
 ///
 /// Exposes ivec1 vector type.
 ///
-/// Include <glm/ext/vector_int1.hpp> to use the features of this extension.
+/// Include <cac/ext/vector_int1.hpp> to use the features of this extension.
 ///
 /// @see ext_vector_uint1 extension.
 /// @see ext_vector_int1_precision extension.
@@ -19,7 +19,7 @@
 #	pragma message("GLM: GLM_EXT_vector_int1 extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_vector_int1
 	/// @{
@@ -28,5 +28,5 @@ namespace glm
 	typedef vec<1, int, defaultp>			ivec1;
 
 	/// @}
-}//namespace glm
+}//namespace cac
 

@@ -1,5 +1,5 @@
 /// @ref gtx_norm
-/// @file glm/gtx/norm.hpp
+/// @file cac/gtx/norm.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_quaternion (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtx_norm GLM_GTX_norm
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/norm.hpp> to use the features of this extension.
+/// Include <cac/gtx/norm.hpp> to use the features of this extension.
 ///
 /// Various ways to compute vector norms.
 
@@ -25,7 +25,7 @@
 #	pragma message("GLM: GLM_GTX_norm extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_norm
 	/// @{
@@ -71,6 +71,6 @@ namespace glm
 	GLM_FUNC_DECL T lxNorm(vec<3, T, Q> const& x, unsigned int Depth);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "norm.inl"

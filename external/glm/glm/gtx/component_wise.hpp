@@ -1,5 +1,5 @@
 /// @ref gtx_component_wise
-/// @file glm/gtx/component_wise.hpp
+/// @file cac/gtx/component_wise.hpp
 /// @date 2007-05-21 / 2011-06-07
 /// @author Christophe Riccio
 ///
@@ -8,7 +8,7 @@
 /// @defgroup gtx_component_wise GLM_GTX_component_wise
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/component_wise.hpp> to use the features of this extension.
+/// Include <cac/gtx/component_wise.hpp> to use the features of this extension.
 ///
 /// Operations between components of a type
 
@@ -26,7 +26,7 @@
 #	pragma message("GLM: GLM_GTX_component_wise extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_component_wise
 	/// @{
@@ -64,6 +64,6 @@ namespace glm
 	GLM_FUNC_DECL typename genType::value_type compMax(genType const& v);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "component_wise.inl"

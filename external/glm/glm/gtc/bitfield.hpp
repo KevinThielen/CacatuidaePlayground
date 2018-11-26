@@ -1,5 +1,5 @@
 /// @ref gtc_bitfield
-/// @file glm/gtc/bitfield.hpp
+/// @file cac/gtc/bitfield.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_bitfield (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtc_bitfield GLM_GTC_bitfield
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/bitfield.hpp> to use the features of this extension.
+/// Include <cac/gtc/bitfield.hpp> to use the features of this extension.
 ///
 /// Allow to perform bit operations on integer values
 
@@ -27,7 +27,7 @@
 #	pragma message("GLM: GLM_GTC_bitfield extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_bitfield
 	/// @{
@@ -136,7 +136,7 @@ namespace glm
 	/// Deinterleaves the bits of x.
 	///
 	/// @see gtc_bitfield
-	GLM_FUNC_DECL glm::u8vec2 bitfieldDeinterleave(glm::uint16 x);
+	GLM_FUNC_DECL cac::u8vec2 bitfieldDeinterleave(cac::uint16 x);
 
 	/// Interleaves the bits of x and y.
 	/// The first bit is the first bit of x followed by the first bit of y.
@@ -162,7 +162,7 @@ namespace glm
 	/// Deinterleaves the bits of x.
 	///
 	/// @see gtc_bitfield
-	GLM_FUNC_DECL glm::u16vec2 bitfieldDeinterleave(glm::uint32 x);
+	GLM_FUNC_DECL cac::u16vec2 bitfieldDeinterleave(cac::uint32 x);
 
 	/// Interleaves the bits of x and y.
 	/// The first bit is the first bit of x followed by the first bit of y.
@@ -188,7 +188,7 @@ namespace glm
 	/// Deinterleaves the bits of x.
 	///
 	/// @see gtc_bitfield
-	GLM_FUNC_DECL glm::u32vec2 bitfieldDeinterleave(glm::uint64 x);
+	GLM_FUNC_DECL cac::u32vec2 bitfieldDeinterleave(cac::uint64 x);
 
 	/// Interleaves the bits of x, y and z.
 	/// The first bit is the first bit of x followed by the first bit of y and the first bit of z.
@@ -261,6 +261,6 @@ namespace glm
 	GLM_FUNC_DECL uint64 bitfieldInterleave(uint16 x, uint16 y, uint16 z, uint16 w);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "bitfield.inl"

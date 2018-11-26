@@ -1,6 +1,6 @@
 /// @ref gtx_intersect
 
-namespace glm
+namespace cac
 {
 	template<typename genType>
 	GLM_FUNC_QUALIFIER bool intersectRayPlane
@@ -10,12 +10,12 @@ namespace glm
 		typename genType::value_type & intersectionDistance
 	)
 	{
-		typename genType::value_type d = glm::dot(dir, planeNormal);
+		typename genType::value_type d = cac::dot(dir, planeNormal);
 		typename genType::value_type Epsilon = std::numeric_limits<typename genType::value_type>::epsilon();
 
 		if(d < -Epsilon)
 		{
-			intersectionDistance = glm::dot(planeOrig - orig, planeNormal) / d;
+			intersectionDistance = cac::dot(planeOrig - orig, planeNormal) / d;
 			return true;
 		}
 
@@ -35,10 +35,10 @@ namespace glm
 		vec<3, T, Q> const edge2 = vert2 - vert0;
 
 		// begin calculating determinant - also used to calculate U parameter
-		vec<3, T, Q> const p = glm::cross(dir, edge2);
+		vec<3, T, Q> const p = cac::cross(dir, edge2);
 
 		// if determinant is near zero, ray lies in plane of triangle
-		T const det = glm::dot(edge1, p);
+		T const det = cac::dot(edge1, p);
 
 		vec<3, T, Q> Perpendicular(0);
 
@@ -48,15 +48,15 @@ namespace glm
 			vec<3, T, Q> const dist = orig - vert0;
 
 			// calculate U parameter and test bounds
-			baryPosition.x = glm::dot(dist, p);
+			baryPosition.x = cac::dot(dist, p);
 			if(baryPosition.x < static_cast<T>(0) || baryPosition.x > det)
 				return false;
 
 			// prepare to test V parameter
-			Perpendicular = glm::cross(dist, edge1);
+			Perpendicular = cac::cross(dist, edge1);
 
 			// calculate V parameter and test bounds
-			baryPosition.y = glm::dot(dir, Perpendicular);
+			baryPosition.y = cac::dot(dir, Perpendicular);
 			if((baryPosition.y < static_cast<T>(0)) || ((baryPosition.x + baryPosition.y) > det))
 				return false;
 		}
@@ -66,15 +66,15 @@ namespace glm
 			vec<3, T, Q> const dist = orig - vert0;
 
 			// calculate U parameter and test bounds
-			baryPosition.x = glm::dot(dist, p);
+			baryPosition.x = cac::dot(dist, p);
 			if((baryPosition.x > static_cast<T>(0)) || (baryPosition.x < det))
 				return false;
 
 			// prepare to test V parameter
-			Perpendicular = glm::cross(dist, edge1);
+			Perpendicular = cac::cross(dist, edge1);
 
 			// calculate V parameter and test bounds
-			baryPosition.y = glm::dot(dir, Perpendicular);
+			baryPosition.y = cac::dot(dir, Perpendicular);
 			if((baryPosition.y > static_cast<T>(0)) || (baryPosition.x + baryPosition.y < det))
 				return false;
 		}
@@ -84,7 +84,7 @@ namespace glm
 		T inv_det = static_cast<T>(1) / det;
 
 		// calculate distance, ray intersects triangle
-		distance = glm::dot(edge2, Perpendicular) * inv_det;
+		distance = cac::dot(edge2, Perpendicular) * inv_det;
 		baryPosition *= inv_det;
 
 		return true;
@@ -194,4 +194,4 @@ namespace glm
 		intersectionNormal2 = (intersectionPoint2 - sphereCenter) / sphereRadius;
 		return true;
 	}
-}//namespace glm
+}//namespace cac

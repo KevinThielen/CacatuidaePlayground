@@ -1,5 +1,5 @@
 /// @ref gtx_color_encoding
-/// @file glm/gtx/color_encoding.hpp
+/// @file cac/gtx/color_encoding.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_color_encoding (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtx_color_encoding GLM_GTX_color_encoding
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/color_encoding.hpp> to use the features of this extension.
+/// Include <cac/gtx/color_encoding.hpp> to use the features of this extension.
 ///
 /// @brief Allow to perform bit operations on integer values
 
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTC_color_encoding extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_color_encoding
 	/// @{
@@ -45,6 +45,6 @@ namespace glm
 	GLM_FUNC_DECL vec<3, T, Q> convertD65XYZToD50XYZ(vec<3, T, Q> const& ColorD65XYZ);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "color_encoding.inl"

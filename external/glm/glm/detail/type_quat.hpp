@@ -1,5 +1,5 @@
 /// @ref gtc_quaternion
-/// @file glm/gtc/quaternion.hpp
+/// @file cac/gtc/quaternion.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_constants (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtc_quaternion GLM_GTC_quaternion
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/quaternion.hpp> to use the features of this extension.
+/// Include <cac/gtc/quaternion.hpp> to use the features of this extension.
 ///
 /// Defines a templated quaternion type and several quaternion operations.
 
@@ -23,7 +23,7 @@
 #include "../gtc/constants.hpp"
 #include "../gtc/matrix_transform.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_quaternion
 	/// @{
@@ -161,6 +161,6 @@ namespace glm
 	GLM_FUNC_DECL GLM_CONSTEXPR bool operator!=(qua<T, Q> const& q1, qua<T, Q> const& q2);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "type_quat.inl"

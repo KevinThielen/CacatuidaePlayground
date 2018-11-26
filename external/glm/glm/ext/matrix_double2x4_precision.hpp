@@ -1,10 +1,10 @@
 /// @ref core
-/// @file glm/ext/matrix_double2x4_precision.hpp
+/// @file cac/ext/matrix_double2x4_precision.hpp
 
 #pragma once
 #include "../detail/type_mat2x4.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_matrix_precision
 	/// @{
@@ -28,4 +28,4 @@ namespace glm
 	typedef mat<2, 4, double, highp>	highp_dmat2x4;
 
 	/// @}
-}//namespace glm
+}//namespace cac

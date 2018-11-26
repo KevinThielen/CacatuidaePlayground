@@ -1,19 +1,19 @@
 /// @ref gtx_compatibility
-/// @file glm/gtx/compatibility.hpp
+/// @file cac/gtx/compatibility.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_compatibility GLM_GTX_compatibility
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/compatibility.hpp> to use the features of this extension.
+/// Include <cac/gtx/compatibility.hpp> to use the features of this extension.
 ///
 /// Provide functions to increase the compatibility with Cg and HLSL languages
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtc/quaternion.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
@@ -33,7 +33,7 @@
 #	endif
 #endif//GLM_COMPILER
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_compatibility
 	/// @{
@@ -128,6 +128,6 @@ namespace glm
 	typedef mat<4, 4, double, highp>		double4x4;		//!< \brief double-qualifier floating-point matrix with 4 x 4 components. (From GLM_GTX_compatibility extension)
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "compatibility.inl"

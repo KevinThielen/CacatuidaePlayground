@@ -1,5 +1,5 @@
 /// @ref core
-/// @file glm/packing.hpp
+/// @file cac/packing.hpp
 ///
 /// @see <a href="http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf">GLSL 4.20.8 specification, section 8.4 Floating-Point Pack and Unpack Functions</a>
 /// @see gtc_packing
@@ -11,7 +11,7 @@
 ///
 /// These functions do not operate component-wise, rather as described in each case.
 ///
-/// Include <glm/packing.hpp> to use these core features.
+/// Include <cac/packing.hpp> to use these core features.
 
 #pragma once
 
@@ -19,7 +19,7 @@
 #include "./ext/vector_float2.hpp"
 #include "./ext/vector_float4.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_func_packing
 	/// @{
@@ -168,6 +168,6 @@ namespace glm
 	GLM_FUNC_DECL vec2 unpackHalf2x16(uint v);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "detail/func_packing.inl"

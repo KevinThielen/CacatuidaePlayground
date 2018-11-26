@@ -1,10 +1,10 @@
 /// @ref core
-/// @file glm/ext/vector_uint3.hpp
+/// @file cac/ext/vector_uint3.hpp
 
 #pragma once
 #include "../detail/type_vec3.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_vector
 	/// @{
@@ -15,4 +15,4 @@ namespace glm
 	typedef vec<3, unsigned int, defaultp>		uvec3;
 
 	/// @}
-}//namespace glm
+}//namespace cac

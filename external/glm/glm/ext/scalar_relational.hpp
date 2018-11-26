@@ -1,12 +1,12 @@
 /// @ref ext_scalar_relational
-/// @file glm/ext/scalar_relational.hpp
+/// @file cac/ext/scalar_relational.hpp
 ///
 /// @defgroup ext_scalar_relational GLM_EXT_scalar_relational
 /// @ingroup ext
 ///
 /// Exposes comparison functions for scalar types that take a user defined epsilon values.
 ///
-/// Include <glm/ext/scalar_relational.hpp> to use the features of this extension.
+/// Include <cac/ext/scalar_relational.hpp> to use the features of this extension.
 ///
 /// @see core_vector_relational
 /// @see ext_vector_relational
@@ -21,7 +21,7 @@
 #	pragma message("GLM: GLM_EXT_scalar_relational extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// Returns the component-wise comparison of |x - y| < epsilon.
 	/// True if this expression is satisfied.
@@ -38,6 +38,6 @@ namespace glm
 	GLM_FUNC_DECL GLM_CONSTEXPR bool notEqual(genType const& x, genType const& y, genType const& epsilon);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "scalar_relational.inl"

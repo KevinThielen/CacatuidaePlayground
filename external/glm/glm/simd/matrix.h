@@ -1,5 +1,5 @@
 /// @ref simd
-/// @file glm/simd/matrix.h
+/// @file cac/simd/matrix.h
 
 #pragma once
 
@@ -7,7 +7,7 @@
 
 #if GLM_ARCH & GLM_ARCH_SSE2_BIT
 
-GLM_FUNC_QUALIFIER void glm_mat4_matrixCompMult(glm_vec4 const in1[4], glm_vec4 const in2[4], glm_vec4 out[4])
+GLM_FUNC_QUALIFIER void cac_mat4_matrixCompMult(cac_vec4 const in1[4], cac_vec4 const in2[4], cac_vec4 out[4])
 {
 	out[0] = _mm_mul_ps(in1[0], in2[0]);
 	out[1] = _mm_mul_ps(in1[1], in2[1]);
@@ -15,7 +15,7 @@ GLM_FUNC_QUALIFIER void glm_mat4_matrixCompMult(glm_vec4 const in1[4], glm_vec4 
 	out[3] = _mm_mul_ps(in1[3], in2[3]);
 }
 
-GLM_FUNC_QUALIFIER void glm_mat4_add(glm_vec4 const in1[4], glm_vec4 const in2[4], glm_vec4 out[4])
+GLM_FUNC_QUALIFIER void cac_mat4_add(cac_vec4 const in1[4], cac_vec4 const in2[4], cac_vec4 out[4])
 {
 	out[0] = _mm_add_ps(in1[0], in2[0]);
 	out[1] = _mm_add_ps(in1[1], in2[1]);
@@ -23,7 +23,7 @@ GLM_FUNC_QUALIFIER void glm_mat4_add(glm_vec4 const in1[4], glm_vec4 const in2[4
 	out[3] = _mm_add_ps(in1[3], in2[3]);
 }
 
-GLM_FUNC_QUALIFIER void glm_mat4_sub(glm_vec4 const in1[4], glm_vec4 const in2[4], glm_vec4 out[4])
+GLM_FUNC_QUALIFIER void cac_mat4_sub(cac_vec4 const in1[4], cac_vec4 const in2[4], cac_vec4 out[4])
 {
 	out[0] = _mm_sub_ps(in1[0], in2[0]);
 	out[1] = _mm_sub_ps(in1[1], in2[1]);
@@ -31,7 +31,7 @@ GLM_FUNC_QUALIFIER void glm_mat4_sub(glm_vec4 const in1[4], glm_vec4 const in2[4
 	out[3] = _mm_sub_ps(in1[3], in2[3]);
 }
 
-GLM_FUNC_QUALIFIER glm_vec4 glm_mat4_mul_vec4(glm_vec4 const m[4], glm_vec4 v)
+GLM_FUNC_QUALIFIER cac_vec4 cac_mat4_mul_vec4(cac_vec4 const m[4], cac_vec4 v)
 {
 	__m128 v0 = _mm_shuffle_ps(v, v, _MM_SHUFFLE(0, 0, 0, 0));
 	__m128 v1 = _mm_shuffle_ps(v, v, _MM_SHUFFLE(1, 1, 1, 1));
@@ -50,7 +50,7 @@ GLM_FUNC_QUALIFIER glm_vec4 glm_mat4_mul_vec4(glm_vec4 const m[4], glm_vec4 v)
 	return a2;
 }
 
-GLM_FUNC_QUALIFIER __m128 glm_vec4_mul_mat4(glm_vec4 v, glm_vec4 const m[4])
+GLM_FUNC_QUALIFIER __m128 cac_vec4_mul_mat4(cac_vec4 v, cac_vec4 const m[4])
 {
 	__m128 i0 = m[0];
 	__m128 i1 = m[1];
@@ -77,7 +77,7 @@ GLM_FUNC_QUALIFIER __m128 glm_vec4_mul_mat4(glm_vec4 v, glm_vec4 const m[4])
 	return f2;
 }
 
-GLM_FUNC_QUALIFIER void glm_mat4_mul(glm_vec4 const in1[4], glm_vec4 const in2[4], glm_vec4 out[4])
+GLM_FUNC_QUALIFIER void cac_mat4_mul(cac_vec4 const in1[4], cac_vec4 const in2[4], cac_vec4 out[4])
 {
 	{
 		__m128 e0 = _mm_shuffle_ps(in2[0], in2[0], _MM_SHUFFLE(0, 0, 0, 0));
@@ -153,7 +153,7 @@ GLM_FUNC_QUALIFIER void glm_mat4_mul(glm_vec4 const in1[4], glm_vec4 const in2[4
 	}
 }
 
-GLM_FUNC_QUALIFIER void glm_mat4_transpose(glm_vec4 const in[4], glm_vec4 out[4])
+GLM_FUNC_QUALIFIER void cac_mat4_transpose(cac_vec4 const in[4], cac_vec4 out[4])
 {
 	__m128 tmp0 = _mm_shuffle_ps(in[0], in[1], 0x44);
 	__m128 tmp2 = _mm_shuffle_ps(in[0], in[1], 0xEE);
@@ -166,7 +166,7 @@ GLM_FUNC_QUALIFIER void glm_mat4_transpose(glm_vec4 const in[4], glm_vec4 out[4]
 	out[3] = _mm_shuffle_ps(tmp2, tmp3, 0xDD);
 }
 
-GLM_FUNC_QUALIFIER glm_vec4 glm_mat4_determinant_highp(glm_vec4 const in[4])
+GLM_FUNC_QUALIFIER cac_vec4 cac_mat4_determinant_highp(cac_vec4 const in[4])
 {
 	__m128 Fac0;
 	{
@@ -376,11 +376,11 @@ GLM_FUNC_QUALIFIER glm_vec4 glm_mat4_determinant_highp(glm_vec4 const in[4])
 	//						+ m[0][1] * Inverse[1][0]
 	//						+ m[0][2] * Inverse[2][0]
 	//						+ m[0][3] * Inverse[3][0];
-	__m128 Det0 = glm_vec4_dot(in[0], Row2);
+	__m128 Det0 = cac_vec4_dot(in[0], Row2);
 	return Det0;
 }
 
-GLM_FUNC_QUALIFIER glm_vec4 glm_mat4_determinant_lowp(glm_vec4 const m[4])
+GLM_FUNC_QUALIFIER cac_vec4 cac_mat4_determinant_lowp(cac_vec4 const m[4])
 {
 	// _mm_castsi128_ps(_mm_shuffle_epi32(_mm_castps_si128(
 
@@ -440,10 +440,10 @@ GLM_FUNC_QUALIFIER glm_vec4 glm_mat4_determinant_lowp(glm_vec4 const m[4])
 	//	 + m[0][2] * DetCof[2]
 	//	 + m[0][3] * DetCof[3];
 
-	return glm_vec4_dot(m[0], DetCof);
+	return cac_vec4_dot(m[0], DetCof);
 }
 
-GLM_FUNC_QUALIFIER glm_vec4 glm_mat4_determinant(glm_vec4 const m[4])
+GLM_FUNC_QUALIFIER cac_vec4 cac_mat4_determinant(cac_vec4 const m[4])
 {
 	// _mm_castsi128_ps(_mm_shuffle_epi32(_mm_castps_si128(add)
 
@@ -503,10 +503,10 @@ GLM_FUNC_QUALIFIER glm_vec4 glm_mat4_determinant(glm_vec4 const m[4])
 	//	 + m[0][2] * DetCof[2]
 	//	 + m[0][3] * DetCof[3];
 
-	return glm_vec4_dot(m[0], DetCof);
+	return cac_vec4_dot(m[0], DetCof);
 }
 
-GLM_FUNC_QUALIFIER void glm_mat4_inverse(glm_vec4 const in[4], glm_vec4 out[4])
+GLM_FUNC_QUALIFIER void cac_mat4_inverse(cac_vec4 const in[4], cac_vec4 out[4])
 {
 	__m128 Fac0;
 	{
@@ -716,7 +716,7 @@ GLM_FUNC_QUALIFIER void glm_mat4_inverse(glm_vec4 const in[4], glm_vec4 out[4])
 	//						+ m[0][1] * Inverse[1][0]
 	//						+ m[0][2] * Inverse[2][0]
 	//						+ m[0][3] * Inverse[3][0];
-	__m128 Det0 = glm_vec4_dot(in[0], Row2);
+	__m128 Det0 = cac_vec4_dot(in[0], Row2);
 	__m128 Rcp0 = _mm_div_ps(_mm_set1_ps(1.0f), Det0);
 	//__m128 Rcp0 = _mm_rcp_ps(Det0);
 
@@ -727,7 +727,7 @@ GLM_FUNC_QUALIFIER void glm_mat4_inverse(glm_vec4 const in[4], glm_vec4 out[4])
 	out[3] = _mm_mul_ps(Inv3, Rcp0);
 }
 
-GLM_FUNC_QUALIFIER void glm_mat4_inverse_lowp(glm_vec4 const in[4], glm_vec4 out[4])
+GLM_FUNC_QUALIFIER void cac_mat4_inverse_lowp(cac_vec4 const in[4], cac_vec4 out[4])
 {
 	__m128 Fac0;
 	{
@@ -937,7 +937,7 @@ GLM_FUNC_QUALIFIER void glm_mat4_inverse_lowp(glm_vec4 const in[4], glm_vec4 out
 	//						+ m[0][1] * Inverse[1][0]
 	//						+ m[0][2] * Inverse[2][0]
 	//						+ m[0][3] * Inverse[3][0];
-	__m128 Det0 = glm_vec4_dot(in[0], Row2);
+	__m128 Det0 = cac_vec4_dot(in[0], Row2);
 	__m128 Rcp0 = _mm_rcp_ps(Det0);
 	//__m128 Rcp0 = _mm_div_ps(one, Det0);
 	//	Inverse /= Determinant;
@@ -947,13 +947,13 @@ GLM_FUNC_QUALIFIER void glm_mat4_inverse_lowp(glm_vec4 const in[4], glm_vec4 out
 	out[3] = _mm_mul_ps(Inv3, Rcp0);
 }
 /*
-GLM_FUNC_QUALIFIER void glm_mat4_rotate(__m128 const in[4], float Angle, float const v[3], __m128 out[4])
+GLM_FUNC_QUALIFIER void cac_mat4_rotate(__m128 const in[4], float Angle, float const v[3], __m128 out[4])
 {
-	float a = glm::radians(Angle);
+	float a = cac::radians(Angle);
 	float c = cos(a);
 	float s = sin(a);
 
-	glm::vec4 AxisA(v[0], v[1], v[2], float(0));
+	cac::vec4 AxisA(v[0], v[1], v[2], float(0));
 	__m128 AxisB = _mm_set_ps(AxisA.w, AxisA.z, AxisA.y, AxisA.x);
 	__m128 AxisC = detail::sse_nrm_ps(AxisB);
 
@@ -1017,7 +1017,7 @@ GLM_FUNC_QUALIFIER void glm_mat4_rotate(__m128 const in[4], float Angle, float c
 	sse_mul_ps(in, Result, out);
 }
 */
-GLM_FUNC_QUALIFIER void glm_mat4_outerProduct(__m128 const& c, __m128 const& r, __m128 out[4])
+GLM_FUNC_QUALIFIER void cac_mat4_outerProduct(__m128 const& c, __m128 const& r, __m128 out[4])
 {
 	out[0] = _mm_mul_ps(c, _mm_shuffle_ps(r, r, _MM_SHUFFLE(0, 0, 0, 0)));
 	out[1] = _mm_mul_ps(c, _mm_shuffle_ps(r, r, _MM_SHUFFLE(1, 1, 1, 1)));

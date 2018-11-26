@@ -1,19 +1,19 @@
 /// @ref gtx_mixed_product
-/// @file glm/gtx/mixed_product.hpp
+/// @file cac/gtx/mixed_product.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_mixed_product GLM_GTX_mixed_producte
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/mixed_product.hpp> to use the features of this extension.
+/// Include <cac/gtx/mixed_product.hpp> to use the features of this extension.
 ///
 /// Mixed product of 3 vectors.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_mixed_product is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_mixed_product extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_mixed_product
 	/// @{
@@ -36,6 +36,6 @@ namespace glm
 		vec<3, T, Q> const& v3);
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "mixed_product.inl"

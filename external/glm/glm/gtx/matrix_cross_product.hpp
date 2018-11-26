@@ -1,5 +1,5 @@
 /// @ref gtx_matrix_cross_product
-/// @file glm/gtx/matrix_cross_product.hpp
+/// @file cac/gtx/matrix_cross_product.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_extented_min_max (dependence)
@@ -7,14 +7,14 @@
 /// @defgroup gtx_matrix_cross_product GLM_GTX_matrix_cross_product
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/matrix_cross_product.hpp> to use the features of this extension.
+/// Include <cac/gtx/matrix_cross_product.hpp> to use the features of this extension.
 ///
 /// Build cross product matrices
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_matrix_cross_product is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -24,7 +24,7 @@
 #	pragma message("GLM: GLM_GTX_matrix_cross_product extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_matrix_cross_product
 	/// @{
@@ -42,6 +42,6 @@ namespace glm
 		vec<3, T, Q> const& x);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "matrix_cross_product.inl"

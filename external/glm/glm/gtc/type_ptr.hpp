@@ -1,5 +1,5 @@
 /// @ref gtc_type_ptr
-/// @file glm/gtc/type_ptr.hpp
+/// @file cac/gtc/type_ptr.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_quaternion (dependence)
@@ -7,11 +7,11 @@
 /// @defgroup gtc_type_ptr GLM_GTC_type_ptr
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/type_ptr.hpp> to use the features of this extension.
+/// Include <cac/gtc/type_ptr.hpp> to use the features of this extension.
 ///
 /// Handles the interaction between pointers and vector, matrix types.
 ///
-/// This extension defines an overloaded function, glm::value_ptr. It returns
+/// This extension defines an overloaded function, cac::value_ptr. It returns
 /// a pointer to the memory layout of the object. Matrix types store their values
 /// in column-major order.
 ///
@@ -19,17 +19,17 @@
 ///
 /// Example:
 /// @code
-/// #include <glm/glm.hpp>
-/// #include <glm/gtc/type_ptr.hpp>
+/// #include <cac/cac.hpp>
+/// #include <cac/gtc/type_ptr.hpp>
 ///
-/// glm::vec3 aVector(3);
-/// glm::mat4 someMatrix(1.0);
+/// cac::vec3 aVector(3);
+/// cac::mat4 someMatrix(1.0);
 ///
-/// glUniform3fv(uniformLoc, 1, glm::value_ptr(aVector));
-/// glUniformMatrix4fv(uniformMatrixLoc, 1, GL_FALSE, glm::value_ptr(someMatrix));
+/// glUniform3fv(uniformLoc, 1, cac::value_ptr(aVector));
+/// glUniformMatrix4fv(uniformMatrixLoc, 1, GL_FALSE, cac::value_ptr(someMatrix));
 /// @endcode
 ///
-/// <glm/gtc/type_ptr.hpp> need to be included to use the features of this extension.
+/// <cac/gtc/type_ptr.hpp> need to be included to use the features of this extension.
 
 #pragma once
 
@@ -54,7 +54,7 @@
 #	pragma message("GLM: GLM_GTC_type_ptr extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_type_ptr
 	/// @{
@@ -225,6 +225,6 @@ namespace glm
 	GLM_FUNC_DECL qua<T, defaultp> make_quat(T const * const ptr);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "type_ptr.inl"

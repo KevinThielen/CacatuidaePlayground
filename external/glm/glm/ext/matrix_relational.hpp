@@ -1,12 +1,12 @@
 /// @ref ext_matrix_relational
-/// @file glm/ext/matrix_relational.hpp
+/// @file cac/ext/matrix_relational.hpp
 ///
 /// @defgroup ext_matrix_relational GLM_EXT_matrix_relational
 /// @ingroup ext
 ///
 /// Exposes comparison functions for matrix types that take a user defined epsilon values.
 ///
-/// Include <glm/ext/matrix_relational.hpp> to use the features of this extension.
+/// Include <cac/ext/matrix_relational.hpp> to use the features of this extension.
 ///
 /// @see ext_vector_relational
 /// @see ext_scalar_relational
@@ -21,7 +21,7 @@
 #	pragma message("GLM: GLM_EXT_matrix_relational extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_matrix_relational
 	/// @{
@@ -87,6 +87,6 @@ namespace glm
 	GLM_FUNC_DECL GLM_CONSTEXPR vec<C, bool, Q> notEqual(mat<C, R, T, Q> const& x, mat<C, R, T, Q> const& y, vec<C, T, Q> const& epsilon);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "matrix_relational.inl"

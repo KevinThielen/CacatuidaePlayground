@@ -1,5 +1,5 @@
 /// @ref gtx_type_aligned
-/// @file glm/gtx/type_aligned.hpp
+/// @file cac/gtx/type_aligned.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_quaternion (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtx_type_aligned GLM_GTX_type_aligned
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/type_aligned.hpp> to use the features of this extension.
+/// Include <cac/gtx/type_aligned.hpp> to use the features of this extension.
 ///
 /// Defines aligned types.
 
@@ -25,7 +25,7 @@
 #	pragma message("GLM: GLM_GTX_type_aligned extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	///////////////////////////
 	// Signed int vector types
@@ -977,6 +977,6 @@ namespace glm
 #	endif//GLM_FORCE_SINGLE_ONLY
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "type_aligned.inl"

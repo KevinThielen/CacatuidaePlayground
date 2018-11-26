@@ -1,11 +1,11 @@
 /// @ref core
-/// @file glm/detail/func_exponential_simd.inl
+/// @file cac/detail/func_exponential_simd.inl
 
 #include "../simd/exponential.h"
 
 #if GLM_ARCH & GLM_ARCH_SSE2_BIT
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	template<qualifier Q>
@@ -26,12 +26,12 @@ namespace detail
 		GLM_FUNC_QUALIFIER static vec<4, float, aligned_lowp> call(vec<4, float, aligned_lowp> const& v)
 		{
 			vec<4, float, aligned_lowp> Result;
-			Result.data = glm_vec4_sqrt_lowp(v.data);
+			Result.data = cac_vec4_sqrt_lowp(v.data);
 			return Result;
 		}
 	};
 #	endif
 }//namespace detail
-}//namespace glm
+}//namespace cac
 
 #endif//GLM_ARCH & GLM_ARCH_SSE2_BIT

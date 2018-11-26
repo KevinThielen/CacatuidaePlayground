@@ -1,5 +1,5 @@
 /// @ref core
-/// @file glm/geometric.hpp
+/// @file cac/geometric.hpp
 ///
 /// @see <a href="http://www.opengl.org/registry/doc/GLSLangSpec.4.20.8.pdf">GLSL 4.20.8 specification, section 8.5 Geometric Functions</a>
 ///
@@ -8,13 +8,13 @@
 ///
 /// These operate on vectors as vectors, not component-wise.
 ///
-/// Include <glm/geometric.hpp> to use these core features.
+/// Include <cac/geometric.hpp> to use these core features.
 
 #pragma once
 
 #include "detail/type_vec3.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_func_geometric
 	/// @{
@@ -111,6 +111,6 @@ namespace glm
 		T eta);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "detail/func_geometric.inl"

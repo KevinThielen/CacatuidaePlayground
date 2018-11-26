@@ -1,5 +1,5 @@
 /// @ref gtx_dual_quaternion
-/// @file glm/gtx/dual_quaternion.hpp
+/// @file cac/gtx/dual_quaternion.hpp
 /// @author Maksim Vorobiev (msomeone@gmail.com)
 ///
 /// @see core (dependence)
@@ -9,14 +9,14 @@
 /// @defgroup gtx_dual_quaternion GLM_GTX_dual_quaternion
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/dual_quaternion.hpp> to use the features of this extension.
+/// Include <cac/gtx/dual_quaternion.hpp> to use the features of this extension.
 ///
 /// Defines a templated dual-quaternion type and several dual-quaternion operations.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtc/constants.hpp"
 #include "../gtc/quaternion.hpp"
 
@@ -28,7 +28,7 @@
 #	pragma message("GLM: GLM_GTX_dual_quaternion extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_dual_quaternion
 	/// @{
@@ -269,6 +269,6 @@ namespace glm
 #endif
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "dual_quaternion.inl"

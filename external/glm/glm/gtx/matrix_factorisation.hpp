@@ -1,19 +1,19 @@
 /// @ref gtx_matrix_factorisation
-/// @file glm/gtx/matrix_factorisation.hpp
+/// @file cac/gtx/matrix_factorisation.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_matrix_factorisation GLM_GTX_matrix_factorisation
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/matrix_factorisation.hpp> to use the features of this extension.
+/// Include <cac/gtx/matrix_factorisation.hpp> to use the features of this extension.
 ///
 /// Functions to factor matrices in various forms
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_matrix_factorisation is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -29,7 +29,7 @@ Suggestions:
  - Implement other types of matrix factorisation, such as: QL and LQ, L(D)U, eigendecompositions, etc...
 */
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_matrix_factorisation
 	/// @{

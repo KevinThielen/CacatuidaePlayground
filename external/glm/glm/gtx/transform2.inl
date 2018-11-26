@@ -1,6 +1,6 @@
 /// @ref gtx_transform2
 
-namespace glm
+namespace cac
 {
 	template<typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER mat<3, 3, T, Q> shearX2D(mat<3, 3, T, Q> const& m, T s)
@@ -121,5 +121,5 @@ namespace glm
 	{
 		return m * scaleBias(scale, bias);
 	}
-}//namespace glm
+}//namespace cac
 

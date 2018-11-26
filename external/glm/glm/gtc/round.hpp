@@ -1,5 +1,5 @@
 /// @ref gtc_round
-/// @file glm/gtc/round.hpp
+/// @file cac/gtc/round.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_round (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtc_round GLM_GTC_round
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/round.hpp> to use the features of this extension.
+/// Include <cac/gtc/round.hpp> to use the features of this extension.
 ///
 /// Rounding value to specific boundings
 
@@ -25,7 +25,7 @@
 #	pragma message("GLM: GLM_GTC_integer extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_round
 	/// @{
@@ -197,6 +197,6 @@ namespace glm
 	GLM_FUNC_DECL vec<L, T, Q> roundMultiple(vec<L, T, Q> const& v, vec<L, T, Q> const& Multiple);
 
 	/// @}
-} //namespace glm
+} //namespace cac
 
 #include "round.inl"

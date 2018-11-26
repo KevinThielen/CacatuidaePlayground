@@ -1,12 +1,12 @@
 /// @ref gtx_raw_data
-/// @file glm/gtx/raw_data.hpp
+/// @file cac/gtx/raw_data.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_raw_data GLM_GTX_raw_data
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/raw_data.hpp> to use the features of this extension.
+/// Include <cac/gtx/raw_data.hpp> to use the features of this extension.
 ///
 /// Projection of a vector to other one
 
@@ -24,7 +24,7 @@
 #	pragma message("GLM: GLM_GTX_raw_data extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_raw_data
 	/// @{
@@ -46,6 +46,6 @@ namespace glm
 	typedef detail::uint64		qword;
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "raw_data.inl"

@@ -1,12 +1,12 @@
 /// @ref gtc_packing
-/// @file glm/gtc/packing.hpp
+/// @file cac/gtc/packing.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtc_packing GLM_GTC_packing
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/packing.hpp> to use the features of this extension.
+/// Include <cac/gtc/packing.hpp> to use the features of this extension.
 ///
 /// This extension provides a set of function to convert vertors to packed
 /// formats.
@@ -20,7 +20,7 @@
 #	pragma message("GLM: GLM_GTC_packing extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_packing
 	/// @{
@@ -723,6 +723,6 @@ namespace glm
 
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "packing.inl"

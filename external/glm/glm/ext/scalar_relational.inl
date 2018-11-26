@@ -1,6 +1,6 @@
 #include "../common.hpp"
 
-namespace glm
+namespace cac
 {
 	template<typename genType>
 	GLM_FUNC_QUALIFIER GLM_CONSTEXPR bool equal(genType const& x, genType const& y, genType const& epsilon)
@@ -13,4 +13,4 @@ namespace glm
 	{
 		return abs(x - y) > epsilon;
 	}
-}//namespace glm
+}//namespace cac

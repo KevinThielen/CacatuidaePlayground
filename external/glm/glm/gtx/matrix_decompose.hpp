@@ -1,12 +1,12 @@
 /// @ref gtx_matrix_decompose
-/// @file glm/gtx/matrix_decompose.hpp
+/// @file cac/gtx/matrix_decompose.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_matrix_decompose GLM_GTX_matrix_decompose
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/matrix_decompose.hpp> to use the features of this extension.
+/// Include <cac/gtx/matrix_decompose.hpp> to use the features of this extension.
 ///
 /// Decomposes a model matrix to translations, rotation and scale components
 
@@ -28,7 +28,7 @@
 #	pragma message("GLM: GLM_GTX_matrix_decompose extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_matrix_decompose
 	/// @{
@@ -41,6 +41,6 @@ namespace glm
 		vec<3, T, Q> & scale, qua<T, Q> & orientation, vec<3, T, Q> & translation, vec<3, T, Q> & skew, vec<4, T, Q> & perspective);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "matrix_decompose.inl"

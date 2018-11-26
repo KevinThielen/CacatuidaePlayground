@@ -1,19 +1,19 @@
 /// @ref gtx_extend
-/// @file glm/gtx/extend.hpp
+/// @file cac/gtx/extend.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_extend GLM_GTX_extend
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/extend.hpp> to use the features of this extension.
+/// Include <cac/gtx/extend.hpp> to use the features of this extension.
 ///
 /// Extend a position from a source to a position at a defined length.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_extend is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_extend extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_extend
 	/// @{
@@ -37,6 +37,6 @@ namespace glm
 		typename genType::value_type const Length);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "extend.inl"

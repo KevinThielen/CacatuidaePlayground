@@ -5,37 +5,39 @@
 #include <emscripten.h>
 
 
-
-class FPSCounter
+namespace cac 
 {
-public:
-    int fps = 0;
-    float deltaTime = 0;
-
-    void update()
+    class FPSCounter
     {
-        end = emscripten_get_now()/1000.f;
-        deltaTime = end-start;
-        start = end;
+    public:
+        int fps = 0;
+        float deltaTime = 0;
 
-
-        accumulatedTime+=deltaTime;
-        fps++;
-
-        if(accumulatedTime >= 1.0f)
+        void update()
         {
-            printf("Frame Time: %f, FPS: %i\n", deltaTime, fps);
-            fps=0;
-            accumulatedTime = 0;
+            end = emscripten_get_now()/1000.f;
+            deltaTime = end-start;
+            start = end;
+
+
+            accumulatedTime+=deltaTime;
+            fpsCounter++;
+
+            if(accumulatedTime >= 1.0f)
+            {
+                fps=fpsCounter;
+                fpsCounter = 0;
+                accumulatedTime = 0;
+            }
+
         }
 
-    }
-
-private:
-    double start = 0;
-    double end = 0;
-    double accumulatedTime = 0;
-};
-
+    private:
+        int fpsCounter = 0;
+        double start = 0;
+        double end = 0;
+        double accumulatedTime = 0;
+    };
+}
 
 #endif

@@ -1,5 +1,5 @@
 /// @ref core
-/// @file glm/detail/func_exponential.inl
+/// @file cac/detail/func_exponential.inl
 
 #include "../vector_relational.hpp"
 #include "_vectorize.hpp"
@@ -7,7 +7,7 @@
 #include <cmath>
 #include <cassert>
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 #	if GLM_HAS_CXX11_STL
@@ -25,7 +25,7 @@ namespace detail
 	{
 		GLM_FUNC_QUALIFIER static vec<L, T, Q> call(vec<L, T, Q> const& v)
 		{
-			GLM_STATIC_ASSERT(std::numeric_limits<T>::is_iec559, "'log2' only accept floating-point inputs. Include <glm/gtc/integer.hpp> for integer inputs.");
+			GLM_STATIC_ASSERT(std::numeric_limits<T>::is_iec559, "'log2' only accept floating-point inputs. Include <cac/gtc/integer.hpp> for integer inputs.");
 
 			return detail::functor1<vec, L, T, T, Q>::call(log2, v);
 		}
@@ -144,7 +144,7 @@ namespace detail
 		GLM_STATIC_ASSERT(std::numeric_limits<T>::is_iec559, "'inversesqrt' only accept floating-point inputs");
 		return detail::compute_inversesqrt<L, T, Q, detail::is_aligned<Q>::value>::call(x);
 	}
-}//namespace glm
+}//namespace cac
 
 #if GLM_CONFIG_SIMD == GLM_ENABLE
 #	include "func_exponential_simd.inl"

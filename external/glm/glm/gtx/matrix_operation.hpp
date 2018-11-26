@@ -1,19 +1,19 @@
 /// @ref gtx_matrix_operation
-/// @file glm/gtx/matrix_operation.hpp
+/// @file cac/gtx/matrix_operation.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_matrix_operation GLM_GTX_matrix_operation
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/matrix_operation.hpp> to use the features of this extension.
+/// Include <cac/gtx/matrix_operation.hpp> to use the features of this extension.
 ///
 /// Build diagonal matrices from vectors.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_matrix_operation is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_matrix_operation extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_matrix_operation
 	/// @{
@@ -83,6 +83,6 @@ namespace glm
 		vec<4, T, Q> const& v);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "matrix_operation.inl"

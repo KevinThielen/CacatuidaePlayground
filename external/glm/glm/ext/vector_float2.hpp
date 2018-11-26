@@ -1,10 +1,10 @@
 /// @ref core
-/// @file glm/ext/vector_float2.hpp
+/// @file cac/ext/vector_float2.hpp
 
 #pragma once
 #include "../detail/type_vec2.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_vector
 	/// @{
@@ -15,4 +15,4 @@ namespace glm
 	typedef vec<2, float, defaultp>	vec2;
 
 	/// @}
-}//namespace glm
+}//namespace cac

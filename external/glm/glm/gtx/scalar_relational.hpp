@@ -1,19 +1,19 @@
 /// @ref gtx_scalar_relational
-/// @file glm/gtx/scalar_relational.hpp
+/// @file cac/gtx/scalar_relational.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_scalar_relational GLM_GTX_scalar_relational
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/scalar_relational.hpp> to use the features of this extension.
+/// Include <cac/gtx/scalar_relational.hpp> to use the features of this extension.
 ///
 /// Extend a position from a source to a position at a defined length.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_extend is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_extend extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_scalar_relational
 	/// @{
@@ -31,6 +31,6 @@ namespace glm
 
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "scalar_relational.inl"

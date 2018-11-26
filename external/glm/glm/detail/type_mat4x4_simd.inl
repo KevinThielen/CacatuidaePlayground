@@ -1,6 +1,6 @@
 /// @ref core
 
-namespace glm
+namespace cac
 {
 
-}//namespace glm
+}//namespace cac

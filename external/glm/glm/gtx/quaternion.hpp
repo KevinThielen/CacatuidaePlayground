@@ -1,5 +1,5 @@
 /// @ref gtx_quaternion
-/// @file glm/gtx/quaternion.hpp
+/// @file cac/gtx/quaternion.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_extented_min_max (dependence)
@@ -7,14 +7,14 @@
 /// @defgroup gtx_quaternion GLM_GTX_quaternion
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/quaternion.hpp> to use the features of this extension.
+/// Include <cac/gtx/quaternion.hpp> to use the features of this extension.
 ///
 /// Extented quaternion types and functions
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtc/constants.hpp"
 #include "../gtc/quaternion.hpp"
 #include "../ext/quaternion_exponential.hpp"
@@ -28,7 +28,7 @@
 #	pragma message("GLM: GLM_GTX_quaternion extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_quaternion
 	/// @{
@@ -169,6 +169,6 @@ namespace glm
 	GLM_FUNC_DECL T length2(qua<T, Q> const& q);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "quaternion.inl"

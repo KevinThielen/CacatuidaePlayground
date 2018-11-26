@@ -1,6 +1,6 @@
 /// @ref gtx_matrix_operation
 
-namespace glm
+namespace cac
 {
 	template<typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER mat<2, 2, T, Q> diagonal2x2
@@ -114,4 +114,4 @@ namespace glm
 		Result[1][1] = v[1];
 		return Result;
 	}
-}//namespace glm
+}//namespace cac

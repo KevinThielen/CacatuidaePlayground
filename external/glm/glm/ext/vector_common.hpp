@@ -1,12 +1,12 @@
 /// @ref ext_vector_common
-/// @file glm/ext/vector_common.hpp
+/// @file cac/ext/vector_common.hpp
 ///
 /// @defgroup ext_vector_common GLM_EXT_vector_common
 /// @ingroup ext
 ///
 /// Exposes min and max functions for 3 to 4 vector parameters.
 ///
-/// Include <glm/ext/vector_common.hpp> to use the features of this extension.
+/// Include <cac/ext/vector_common.hpp> to use the features of this extension.
 ///
 /// @see core_common
 /// @see ext_scalar_common
@@ -21,7 +21,7 @@
 #	pragma message("GLM: GLM_EXT_vector_common extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup ext_vector_common
 	/// @{
@@ -139,6 +139,6 @@ namespace glm
 	GLM_FUNC_DECL vec<L, T, Q> fmax(vec<L, T, Q> const& a, vec<L, T, Q> const& b, vec<L, T, Q> const& c, vec<L, T, Q> const& d);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "vector_common.inl"

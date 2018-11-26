@@ -1,5 +1,5 @@
 /// @ref gtx_std_based_type
-/// @file glm/gtx/std_based_type.hpp
+/// @file cac/gtx/std_based_type.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_extented_min_max (dependence)
@@ -7,14 +7,14 @@
 /// @defgroup gtx_std_based_type GLM_GTX_std_based_type
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/std_based_type.hpp> to use the features of this extension.
+/// Include <cac/gtx/std_based_type.hpp> to use the features of this extension.
 ///
 /// Adds vector types based on STL value types.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include <cstdlib>
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
@@ -25,7 +25,7 @@
 #	pragma message("GLM: GLM_GTX_std_based_type extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_std_based_type
 	/// @{
@@ -63,6 +63,6 @@ namespace glm
 	typedef vec<4, std::size_t, defaultp>		size4_t;
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "std_based_type.inl"

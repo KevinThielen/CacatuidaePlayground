@@ -1,5 +1,5 @@
 /// @ref gtx_matrix_query
-/// @file glm/gtx/matrix_query.hpp
+/// @file cac/gtx/matrix_query.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_vector_query (dependence)
@@ -7,14 +7,14 @@
 /// @defgroup gtx_matrix_query GLM_GTX_matrix_query
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/matrix_query.hpp> to use the features of this extension.
+/// Include <cac/gtx/matrix_query.hpp> to use the features of this extension.
 ///
 /// Query to evaluate matrix properties
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtx/vector_query.hpp"
 #include <limits>
 
@@ -26,7 +26,7 @@
 #	pragma message("GLM: GLM_GTX_matrix_query extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_matrix_query
 	/// @{
@@ -72,6 +72,6 @@ namespace glm
 	GLM_FUNC_DECL bool isOrthogonal(matType<C, R, T, Q> const& m, T const& epsilon);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "matrix_query.inl"

@@ -1,19 +1,19 @@
 /// @ref gtx_wrap
-/// @file glm/gtx/wrap.hpp
+/// @file cac/gtx/wrap.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_wrap GLM_GTX_wrap
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/wrap.hpp> to use the features of this extension.
+/// Include <cac/gtx/wrap.hpp> to use the features of this extension.
 ///
 /// Wrapping mode of texture coordinates.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../gtc/vec1.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
@@ -24,7 +24,7 @@
 #	pragma message("GLM: GLM_GTX_wrap extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_wrap
 	/// @{
@@ -50,6 +50,6 @@ namespace glm
 	GLM_FUNC_DECL genType mirrorRepeat(genType const& Texcoord);
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "wrap.inl"

@@ -1,6 +1,6 @@
 #pragma once
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	// Internal class for implementing swizzle operators
@@ -268,9 +268,9 @@ namespace detail
 	}
 
 }//namespace detail
-}//namespace glm
+}//namespace cac
 
-namespace glm
+namespace cac
 {
 	namespace detail
 	{

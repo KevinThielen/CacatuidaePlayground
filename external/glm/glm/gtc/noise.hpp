@@ -1,12 +1,12 @@
 /// @ref gtc_noise
-/// @file glm/gtc/noise.hpp
+/// @file cac/gtc/noise.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtc_noise GLM_GTC_noise
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/noise.hpp> to use the features of this extension.
+/// Include <cac/gtc/noise.hpp> to use the features of this extension.
 ///
 /// Defines 2D, 3D and 4D procedural noise functions
 /// Based on the work of Stefan Gustavson and Ashima Arts on "webgl-noise":
@@ -31,7 +31,7 @@
 #	pragma message("GLM: GLM_GTC_noise extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_noise
 	/// @{
@@ -56,6 +56,6 @@ namespace glm
 		vec<L, T, Q> const& p);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "noise.inl"

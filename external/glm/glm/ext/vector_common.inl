@@ -1,33 +1,33 @@
 #include "../detail/_vectorize.hpp"
 
-namespace glm
+namespace cac
 {
 	template<length_t L, typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER GLM_CONSTEXPR vec<L, T, Q> min(vec<L, T, Q> const& x, vec<L, T, Q> const& y, vec<L, T, Q> const& z)
 	{
 		GLM_STATIC_ASSERT(std::numeric_limits<T>::is_iec559, "'min' only accept floating-point or integer inputs");
-		return glm::min(glm::min(x, y), z);
+		return cac::min(cac::min(x, y), z);
 	}
 
 	template<length_t L, typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER GLM_CONSTEXPR vec<L, T, Q> min(vec<L, T, Q> const& x, vec<L, T, Q> const& y, vec<L, T, Q> const& z, vec<L, T, Q> const& w)
 	{
 		GLM_STATIC_ASSERT(std::numeric_limits<T>::is_iec559, "'min' only accept floating-point or integer inputs");
-		return glm::min(glm::min(x, y), glm::min(z, w));
+		return cac::min(cac::min(x, y), cac::min(z, w));
 	}
 
 	template<length_t L, typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER GLM_CONSTEXPR vec<L, T, Q> max(vec<L, T, Q> const& x, vec<L, T, Q> const& y, vec<L, T, Q> const& z)
 	{
 		GLM_STATIC_ASSERT(std::numeric_limits<T>::is_iec559, "'max' only accept floating-point or integer inputs");
-		return glm::max(glm::max(x, y), z);
+		return cac::max(cac::max(x, y), z);
 	}
 
 	template<length_t L, typename T, qualifier Q>
 	GLM_FUNC_QUALIFIER GLM_CONSTEXPR vec<L, T, Q> max(vec<L, T, Q> const& x, vec<L, T, Q> const& y, vec<L, T, Q> const& z, vec<L, T, Q> const& w)
 	{
 		GLM_STATIC_ASSERT(std::numeric_limits<T>::is_iec559, "'max' only accept floating-point or integer inputs");
-		return glm::max(glm::max(x, y), glm::max(z, w));
+		return cac::max(cac::max(x, y), cac::max(z, w));
 	}
 
 	template<length_t L, typename T, qualifier Q>
@@ -85,4 +85,4 @@ namespace glm
 		GLM_STATIC_ASSERT(std::numeric_limits<T>::is_iec559, "'fmax' only accept floating-point inputs");
 		return fmax(fmax(a, b), fmax(c, d));
 	}
-}//namespace glm
+}//namespace cac

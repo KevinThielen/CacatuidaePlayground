@@ -1,6 +1,6 @@
 /// @ref gtc_integer
 
-namespace glm{
+namespace cac{
 namespace detail
 {
 	template<length_t L, typename T, qualifier Q, bool Aligned>
@@ -65,4 +65,4 @@ namespace detail
 
 		return vec<L, uint, Q>(x + static_cast<T>(0.5));
 	}
-}//namespace glm
+}//namespace cac

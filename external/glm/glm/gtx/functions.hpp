@@ -1,5 +1,5 @@
 /// @ref gtx_functions
-/// @file glm/gtx/functions.hpp
+/// @file cac/gtx/functions.hpp
 ///
 /// @see core (dependence)
 /// @see gtc_quaternion (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtx_functions GLM_GTX_functions
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/functions.hpp> to use the features of this extension.
+/// Include <cac/gtx/functions.hpp> to use the features of this extension.
 ///
 /// List of useful common functions.
 
@@ -22,7 +22,7 @@
 #	pragma message("GLM: GLM_GTX_functions extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_functions
 	/// @{
@@ -46,7 +46,7 @@ namespace glm
 		vec<2, T, Q> const& StandardDeviation);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "functions.inl"
 

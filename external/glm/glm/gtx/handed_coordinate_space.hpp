@@ -1,19 +1,19 @@
 /// @ref gtx_handed_coordinate_space
-/// @file glm/gtx/handed_coordinate_space.hpp
+/// @file cac/gtx/handed_coordinate_space.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_handed_coordinate_space GLM_GTX_handed_coordinate_space
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/handed_coordinate_system.hpp> to use the features of this extension.
+/// Include <cac/gtx/handed_coordinate_system.hpp> to use the features of this extension.
 ///
 /// To know if a set of three basis vectors defines a right or left-handed coordinate system.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_handed_coordinate_space is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_handed_coordinate_space extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_handed_coordinate_space
 	/// @{
@@ -45,6 +45,6 @@ namespace glm
 		vec<3, T, Q> const& normal);
 
 	/// @}
-}// namespace glm
+}// namespace cac
 
 #include "handed_coordinate_space.inl"

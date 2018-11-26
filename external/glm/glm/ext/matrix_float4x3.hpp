@@ -1,10 +1,10 @@
 /// @ref core
-/// @file glm/ext/matrix_float4x3.hpp
+/// @file cac/ext/matrix_float4x3.hpp
 
 #pragma once
 #include "../detail/type_mat4x3.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_matrix
 	/// @{
@@ -15,4 +15,4 @@ namespace glm
 	typedef mat<4, 3, float, defaultp>			mat4x3;
 
 	/// @}
-}//namespace glm
+}//namespace cac

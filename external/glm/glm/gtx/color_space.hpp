@@ -1,19 +1,19 @@
 /// @ref gtx_color_space
-/// @file glm/gtx/color_space.hpp
+/// @file cac/gtx/color_space.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_color_space GLM_GTX_color_space
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/color_space.hpp> to use the features of this extension.
+/// Include <cac/gtx/color_space.hpp> to use the features of this extension.
 ///
 /// Related to RGB to HSV conversions and operations.
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_color_space is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_color_space extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_color_space
 	/// @{
@@ -67,6 +67,6 @@ namespace glm
 		vec<3, T, Q> const& color);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "color_space.inl"

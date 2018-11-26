@@ -1,12 +1,12 @@
 /// @ref gtx_projection
-/// @file glm/gtx/projection.hpp
+/// @file cac/gtx/projection.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_projection GLM_GTX_projection
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/projection.hpp> to use the features of this extension.
+/// Include <cac/gtx/projection.hpp> to use the features of this extension.
 ///
 /// Projection of a vector to other one
 
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_projection extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_projection
 	/// @{
@@ -35,6 +35,6 @@ namespace glm
 	GLM_FUNC_DECL genType proj(genType const& x, genType const& Normal);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "projection.inl"

@@ -1,12 +1,12 @@
 /// @ref gtc_type_aligned
-/// @file glm/gtc/type_aligned.hpp
+/// @file cac/gtc/type_aligned.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtc_type_aligned GLM_GTC_type_aligned
 /// @ingroup gtc
 ///
-/// Include <glm/gtc/type_aligned.hpp> to use the features of this extension.
+/// Include <cac/gtc/type_aligned.hpp> to use the features of this extension.
 ///
 /// Aligned types allowing SIMD optimizations of vectors and matrices types
 
@@ -34,7 +34,7 @@
 #include "../vec3.hpp"
 #include "../vec4.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtc_type_aligned
 	/// @{
@@ -1312,4 +1312,4 @@ namespace glm
 #endif//GLM_PRECISION
 
 	/// @}
-}//namespace glm
+}//namespace cac

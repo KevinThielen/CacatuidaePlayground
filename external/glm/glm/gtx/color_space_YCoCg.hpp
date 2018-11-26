@@ -1,19 +1,19 @@
 /// @ref gtx_color_space_YCoCg
-/// @file glm/gtx/color_space_YCoCg.hpp
+/// @file cac/gtx/color_space_YCoCg.hpp
 ///
 /// @see core (dependence)
 ///
 /// @defgroup gtx_color_space_YCoCg GLM_GTX_color_space_YCoCg
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/color_space_YCoCg.hpp> to use the features of this extension.
+/// Include <cac/gtx/color_space_YCoCg.hpp> to use the features of this extension.
 ///
 /// RGB to YCoCg conversions and operations
 
 #pragma once
 
 // Dependency:
-#include "../glm.hpp"
+#include "../cac.hpp"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
 #	error "GLM: GLM_GTX_color_space_YCoCg is an experimental extension and may change in the future. Use #define GLM_ENABLE_EXPERIMENTAL before including it, if you really want to use it."
@@ -23,7 +23,7 @@
 #	pragma message("GLM: GLM_GTX_color_space_YCoCg extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_color_space_YCoCg
 	/// @{
@@ -55,6 +55,6 @@ namespace glm
 		vec<3, T, Q> const& YCoCgColor);
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "color_space_YCoCg.inl"

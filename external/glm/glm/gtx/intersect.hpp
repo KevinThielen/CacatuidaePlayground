@@ -1,5 +1,5 @@
 /// @ref gtx_intersect
-/// @file glm/gtx/intersect.hpp
+/// @file cac/gtx/intersect.hpp
 ///
 /// @see core (dependence)
 /// @see gtx_closest_point (dependence)
@@ -7,7 +7,7 @@
 /// @defgroup gtx_intersect GLM_GTX_intersect
 /// @ingroup gtx
 ///
-/// Include <glm/gtx/intersect.hpp> to use the features of this extension.
+/// Include <cac/gtx/intersect.hpp> to use the features of this extension.
 ///
 /// Add intersection functions
 
@@ -16,7 +16,7 @@
 // Dependency:
 #include <cfloat>
 #include <limits>
-#include "../glm.hpp"
+#include "../cac.hpp"
 #include "../geometric.hpp"
 #include "../gtx/closest_point.hpp"
 #include "../gtx/vector_query.hpp"
@@ -29,7 +29,7 @@
 #	pragma message("GLM: GLM_GTX_closest_point extension included")
 #endif
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup gtx_intersect
 	/// @{
@@ -87,6 +87,6 @@ namespace glm
 		genType & intersectionPosition2 = genType(), genType & intersectionNormal2 = genType());
 
 	/// @}
-}//namespace glm
+}//namespace cac
 
 #include "intersect.inl"

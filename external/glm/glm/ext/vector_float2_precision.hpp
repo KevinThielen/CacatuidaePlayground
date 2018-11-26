@@ -1,10 +1,10 @@
 /// @ref core
-/// @file glm/ext/vector_float2_precision.hpp
+/// @file cac/ext/vector_float2_precision.hpp
 
 #pragma once
 #include "../detail/type_vec2.hpp"
 
-namespace glm
+namespace cac
 {
 	/// @addtogroup core_vector_precision
 	/// @{
@@ -28,4 +28,4 @@ namespace glm
 	typedef vec<2, float, lowp>			lowp_vec2;
 
 	/// @}
-}//namespace glm
+}//namespace cac
